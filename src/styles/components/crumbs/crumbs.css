@@ -1,0 +1,21 @@
+.next-previous li { display: inline; }     /* ?? */
+
+.breadcrumbs li {
+    display: inline-block;
+    *display: inline;
+    /* IE7 inline-block hack */
+
+    *zoom: 1;
+
+}
+
+/* Rydd samtlige breadcrumbs og bruk dette istedenfor hardkoda divider.
+
+.breadcrumbs li:after{
+    content: " /";
+}
+
+.breadcrumbs li:last-child:after{
+    content: "";
+}
+*/

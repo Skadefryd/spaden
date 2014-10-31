@@ -1,0 +1,37 @@
+.topbar { top: 0; width: 100%; z-index: 3; -webkit-backface-visibility: hidden; backface-visibility: hidden; background-color: #0099ff; }
+.topbar-level2 { top: 55px; width: 100%; z-index: 2; }
+.topbar:after, .topbar-level2:after { clear: both; }
+.topbar-nav-svg img { width: 22px; height: 22px; vertical-align: middle; }
+.topbar-nav-svg-home img { max-height: 34px; vertical-align: middle; }
+.nav-level1 { height: 55px; width: auto; display: table; table-layout: fixed; }
+.nav-level1 a { color: #fff!important; border-right: 1px solid #07e; display: table-cell; vertical-align: middle; }
+.nav-level1 a .caption { vertical-align: middle; }
+.nav-level1 a:hover, .nav-level1 a.active { text-decoration: none; }
+.nav-level1 .nav-element:hover, .nav-level1 .nav-active { background-color: #07e; }
+.nav-level2 { clear: both; border-bottom: 1px solid #cdd3d8; }
+.topbar.fixed + .page { margin-top: 65px; }
+.topbar-level2.fixed + .page { margin-top: 110px; }
+@media screen and (max-width:767px) {
+    .homelink { padding-left: 10px!important; padding-right: 10px; width: 80px; }
+    .topbar-nav-svg-home img { max-height: 19px; } /* IE */
+    .topbar-level2.open, .topbar-level2.open .inner, .topbar-level2.open .bd, .topbar-level2.open .nav-level2 { height: 100%; }
+    .topbar-nav-svg-caption { display: block; }
+    .nav-level1 { width: 100%; }
+    .nav-level1 span { font-size: 10px; }
+    .nav-level2 .scroll { overflow-y: scroll; -webkit-overflow-scrolling: touch; height: 85%; height: calc(100% - 60px); }
+    .hamburger .nav-level1:before { content: "☰"; color:#fff; display: inline-block; float: right; padding: 10px; padding: 0 10px; font-size: 30px; height: 55px; line-height: 55px; cursor: pointer; }
+    .hamburger .nav-level1 { display: block; }
+    .hamburger .nav-level1 span { font-size: 14px; }
+    .hamburger .topbar-nav-svg img, .hamburger br { display: none; }
+    .hamburger .nav-element { display: none; padding: 10px; background: #4cb7ff; box-shadow: inset 0 1px 0 0 rgba(0,0,0,.1); }
+    .hamburger:hover .nav-element, .hamburger:active .nav-element, .hamburger:focus .nav-element { display: block; }
+}
+@media screen and (min-width: 768px) {
+	.nav-level1 a { height: 55px; padding-left: 20px; padding-right: 20px; }
+	.topbar-nav-svg img, .topbar-nav-svg-home { margin-right: 5px; }
+    .topbar-nav-svg-home img { max-width: 106px; } /* IE */
+}
+@media screen and (max-width:470px) {
+    .homelink { padding-left: 5px!important; padding-right: 5px; width: 80px; }
+    .topbar-nav-svg-home img { max-height: 22px; } /* IE */
+}

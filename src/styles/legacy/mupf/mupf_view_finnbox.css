@@ -1,0 +1,109 @@
+.mupf .view-finnbox #bar-content {
+	left: 0px;
+	padding-left: 10px;
+}
+.mupf .view-finnbox .bar-messages {
+    overflow-x: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+	left: 0;
+    bottom: 25px;
+    width: 100%;
+}
+
+.mupf .view-finnbox .message-content {
+	position: relative;
+    z-index: 1;
+	font-size: 12px;
+	color: #999;
+	margin: 0 9px 0 17px;
+	padding: 5px 1px 5px 5px;
+} 
+
+.mupf .view-finnbox .message-content:hover {
+    background-color: #EAEAEA;
+}
+
+.mupf .view-finnbox .message-content h4 {
+	font-size: 14px;
+	font-weight: normal;
+	color: black;
+	margin: 15px 10px 0 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mupf .view-finnbox .message-content p {
+	margin: 5px 0 5px 0;
+	color: black;
+}
+
+.mupf .view-finnbox hr {
+    margin: 0px 9px 0px 17px;
+	border-color: #DDD;
+}
+
+.mupf .view-finnbox .fade-in-block {
+    opacity: 0;
+    -webkit-transition: opacity 100ms linear;
+    -moz-transition: opacity 100ms linear;
+    -ms-transition: opacity 100ms linear;
+    -o-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+}
+.mupf .view-finnbox .fade-in-block-active {
+    -webkit-transition: opacity 100ms linear;
+    -moz-transition: opacity 100ms linear;
+    -ms-transition: opacity 100ms linear;
+    -o-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+    opacity: 1;
+}
+
+.mupf .view-finnbox .fly-in-block {
+    position: relative;
+    z-index: 1;
+    left: -500px;
+    -webkit-transition: left 100ms linear;
+    -moz-transition: left 100ms linear;
+    -ms-transition: left 100ms linear;
+    -o-transition: left 100ms linear;
+    transition: left 100ms linear;
+}
+.mupf .view-finnbox .fly-in-block-active {
+    -webkit-transition: left 100ms linear;
+    -moz-transition: left 100ms linear;
+    -ms-transition: left 100ms linear;
+    -o-transition: left 100ms linear;
+    transition: left 100ms linear;
+    left: 0;
+}
+
+.view-finnbox .message-status {
+    position: absolute;
+    z-index: 2;
+    left: -11px;
+    top: 45%;
+    border-radius: 10px;
+    width: 8px;
+    height: 8px;
+    display: block;
+    background: transparent;
+}
+.view-finnbox .message-status.active {
+    background-color: #0099FF;
+}
+
+.view-finnbox .bar-messages .state-active,
+.view-finnbox .message-content.expand .state-inactive{
+    display: none;
+}
+
+.view-finnbox .message-content.expand .state-active,
+.view-finnbox .bar-messages .state-inactive {
+    display: inherit;
+}
+
+

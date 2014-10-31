@@ -1,0 +1,16 @@
+img{
+	max-width:100%;
+}
+.roundedborder,.rounded-border{
+	border-radius:50%;
+}
+/* Preserve space for images in stream */
+@media screen and (min-width: 990px) {
+	.stream-img { min-height: 180px; } 
+}
+@media screen and (min-width: 768px) and (max-width: 989px) {
+	.stream-img { min-height: 132px; }
+}
+@media screen and (max-width: 767px) {
+	.stream-img { min-height: 56px; }
+}

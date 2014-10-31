@@ -1,0 +1,23 @@
+.event-label {
+    background-color: #0099ff;
+    color: white;
+    width: 11px;
+    height: 10px;
+    padding: 3px 2px 2px 2px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    display:inline-block;
+    border-radius: 15px;
+}
+.ribbon-squeezed-finncode {
+    margin-right: 65px;
+    margin-left: 10px;
+}
+.inline-advert {
+    height: 50px;
+}
+
+#minfinn-tabs li.active a {
+    font-weight: bold;
+}

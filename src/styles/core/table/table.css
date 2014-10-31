@@ -1,0 +1,273 @@
+/* Experimental from bootstrap */
+/*
+ * Tables for, you guessed it, tabular data
+ * ---------------------------------------- */
+table {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px 10px 9px 0;
+  line-height: 1.5em;
+  text-align: left;
+}
+table th {
+  padding-top: 9px;
+  vertical-align: middle;
+}
+table td {
+  vertical-align: top;
+  border-top: 1px solid #cdd3d8;
+}
+table thead th {
+    background-color: #9BA8B1;
+    color:#fff;
+}
+table tbody th {
+  border-top: 1px solid #cdd3d8;
+  vertical-align: top;
+}
+
+.condensed th, .condensed td {
+  padding: 5px 5px 4px 5px!important;
+}
+
+.super-condensed th, .super-condensed td {
+  padding: 2px 3px!important;
+}
+table.centerify td, table.centerify th {
+    text-align: center;
+}
+
+/* */
+
+.bordered-table {
+  border: 1px solid #cdd3d8;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  /* IE7, collapse table to remove spacing */
+  border-radius: 4px;
+}
+.bordered-table td, .bordered-table th{
+	padding-left: 10px;
+}
+.bordered-table tr:first-child * {
+    border-top: none;
+}
+.bordered-table th + th, .bordered-table td + td, .bordered-table th + td {
+  border-left: 1px solid #cdd3d8;
+}
+.bordered-table thead tr:first-child th:first-child, .bordered-table tbody tr:first-child td:first-child {
+  border-radius: 2px 0 0 0;
+}
+.bordered-table thead tr:first-child th:last-child, .bordered-table tbody tr:first-child td:last-child {
+  border-radius: 0 2px 0 0;
+}
+.bordered-table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 2px;
+}
+.bordered-table tbody tr:last-child td:last-child {
+  border-radius: 0 0 2px 0;
+}
+
+.bordered-table.borderless-edges {
+    /* leave right border styles from .bordered-table */
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0;
+}
+
+.zebra-striped tbody tr:nth-child(odd) td, .zebra-striped tbody tr:nth-child(odd) th {
+  background-color: #edf0f1;
+}
+.expandable tbody tr:hover td, .expandable tbody tr:hover th {
+  background-color: #edf0f1;
+}
+.sort-up:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    transform: rotate(360deg);
+}
+.sort-down:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    transform: rotate(360deg);
+}
+.collapsed, .table-pointer{
+    height:14px;
+    width:10px;
+    background: transparent url("/img/collapse/prolapse.png") no-repeat -5px -2px;
+}
+.expanded, .state-expanded .table-pointer{
+    background: transparent url("/img/collapse/prolapse.png") no-repeat -25px -2px;
+}
+table .header {
+  cursor: pointer;
+}
+table .header:after {
+  content: "";
+  float: right;
+  margin-top: 7px;
+  border-width: 0 4px 4px;
+  border-style: solid;
+  border-color: #000 transparent;
+  visibility: hidden;
+}
+table .headerSortUp, table .headerSortDown {
+  background-color: rgba(141, 192, 219, 0.25);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+table .header:hover:after {
+  visibility: visible;
+}
+table .headerSortDown:after, table .headerSortDown:hover:after {
+  visibility: visible;
+  filter: alpha(opacity=60);
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+table .headerSortUp:after {
+  border-bottom: none;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #000;
+  visibility: visible;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  filter: alpha(opacity=60);
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+table .blue {
+  color: #049cdb;
+  border-bottom-color: #049cdb;
+}
+table .headerSortUp.blue, table .headerSortDown.blue {
+  background-color: #ade6fe;
+}
+table .green {
+  color: #46a546;
+  border-bottom-color: #46a546;
+}
+table .headerSortUp.green, table .headerSortDown.green {
+  background-color: #cdeacd;
+}
+table .red {
+  color: #9d261d;
+  border-bottom-color: #9d261d;
+}
+table .headerSortUp.red, table .headerSortDown.red {
+  background-color: #f4c8c5;
+}
+table .yellow {
+  color: #ffc40d;
+  border-bottom-color: #ffc40d;
+}
+table .headerSortUp.yellow, table .headerSortDown.yellow {
+  background-color: #fff6d9;
+}
+table .orange {
+  color: #f89406;
+  border-bottom-color: #f89406;
+}
+table .headerSortUp.orange, table .headerSortDown.orange {
+  background-color: #fee9cc;
+}
+table .purple {
+  color: #7a43b6;
+  border-bottom-color: #7a43b6;
+}
+table .headerSortUp.purple, table .headerSortDown.purple {
+  background-color: #e2d5f0;
+}
+tr.selected th, tr.selected td {
+    background-color: #4f6676 !important;
+}
+tr.heavy td, tr.heavy th {
+    vertical-align: bottom;
+}
+table.clickable tbody tr {
+    cursor: pointer;
+}
+table .centerify td {
+    text-align: center;
+}
+
+
+/* Border my tablestuff */
+
+table.outerborder {
+    border: 1px solid #cdd3d8;
+    border-collapse: separate;
+    *border-collapse: collapse;
+    /* IE7, collapse table to remove spacing */
+    border-radius: 1px;
+}
+table.outerborder thead tr:first-child th:first-child {
+    border-radius: 1px 0 0 0;
+}
+table.outerborder td, table.outerborder th{
+    padding-left: 10px;
+}
+
+table.innerborder th + th, table.innerborder td + td, .table.innerborder th + td {
+    border-left: 1px solid #cdd3d8;
+}
+table.hover-rows tbody tr:hover td,table.hover-rows tbody tr:hover th, tr.hover-rows{
+    background-color: #edf0f1;
+}
+table.hover-cells tbody td:hover, td.hover-cells{
+    background-color: #edf0f1;
+}
+
+/* Collapsable table */
+.table-collapsable{
+    border-collapse:separate;
+}
+.table-collapsable tr:hover{
+    cursor:pointer;
+    background-color:#edf0f1;
+}
+.table-collapsable .contentcrap td{
+    border-top: 0;
+}
+.table-collapsable .contentcrap td p{
+    border-radius:2px;
+}
+
+.border-black, .border-black * { border-color:#000 !important; }
+.border-dk-gray, .border-dk-gray * { border-color:#666 !important; }
+.border-lt-gray, .border-lt-gray * { border-color:#eee !important; }
+.border-pale-gray, .border-pale-gray * { border-color:#f5f5f5 !important; }
+.border-white, .border-white * { border-color:#fff !important; }
+.border-dkdk-blue, .border-dkdk-blue * { border-color:#000066 !important; }
+.border-dk-blue, .border-dk-blue * { border-color:#0099ff !important; }
+.border-blue, .border-blue * { border-color:#a2d2ee !important; }
+.border-lt-blue, .border-lt-blue * { border-color:#ddeeff !important; }
+.border-pale-blue, .border-pale-blue * { border-color:#f1f8ff !important; }
+.border-contrast, .border-contrast * { border-color:#444 !important;}
+.border-firm, .border-firm * { border-color:#ff6600 !important;}
+.border-positive, .border-positive * { border-color:#669933 !important;}
+.border-negative, .border-negative * { border-color:#cc0000 !important;}
+.border-snotgreen, .border-snotgreen * { border-color:#d2e286 !important; }
+.border-pissyellow, .border-pissyellow * { border-color:#ffff99 !important; }
+
+.border-pale, .border-pale * { border-color:#CDD3D8 !important; }

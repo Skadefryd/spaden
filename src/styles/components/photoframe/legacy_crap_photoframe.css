@@ -1,0 +1,82 @@
+/* Photo framing */
+/* add photoframe class to a wrapper directly outside img tag */
+/* photothumbframe class for thumb frame with no shadow */
+
+.photoframe img,.photoframe .photo {
+/*    border:1px solid #bbb;*/
+    padding:3px;
+/*    border-radius:2px;*/
+    background-color:white;
+}
+
+.photoframe{
+    position:relative;
+    z-index:1;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.photoframe img { display: block; }
+
+/* eksperimentel kode for å beskjære thumbs til samme størrelse */
+.thumbwrap,
+.thumbwrap-allimages {
+    height:50px;
+    width:80px;
+    border-radius: 2px;
+/*    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #bbb, 0 0 0 3px #fff, 0 0 0 3px #bbb, 0 3px 6px rgba(0, 0, 0, 0.4);*/
+    margin:10px 10px 10px 4px;
+    display: inline-block;
+    float: left;
+}
+.viewImage .thumbwrap {
+    border: 6px solid #EEE;
+}
+.thumbwrap{
+    overflow:hidden;
+    z-index:1;
+}
+.thumbwrap-allimages {
+    background: #999;
+    text-align: center;
+}
+.thumbwrap-allimages a {
+    height:43px;
+    width:80px;
+    display: inline-block;
+    text-align: center;
+    margin: -10px 0 0 -6px;
+    padding: 7px 0 0 0;
+}
+.thumbwrap:hover,
+.thumbwrap-allimages:hover {
+/*    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #777, 0 0 0 3px #fff, 0 0 0 3px #777, 0 3px 6px rgba(0, 0, 0, 0.4);*/
+}
+.itemSelected .thumbwrap {
+    border: 6px solid #999;
+/*    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #777, 0 0 0 3px #fff, 0 0 0 3px #777, 0 3px 10px rgba(0, 0, 0, 0.9);*/
+}
+.thumbinnerwrap{
+    height:200px;
+    width:200px;
+    position:relative;
+    margin-top:-75px;
+    margin-left:-60px;
+    text-align:center;
+    line-height:200px;
+    display:inline-block;
+
+}
+.thumbinnerwrap img{
+    margin:0 auto;
+    display:inline-block !important;
+    vertical-align:middle;
+    width:80px;
+    min-height:54px;
+    *height:54px;
+    overflow: hidden;
+}
+
+.thumbwrap, .thumbwrap-allimages { border: 3px solid #eee; }
+.thumbwrap.selectedThumb { border: 3px solid #999; }

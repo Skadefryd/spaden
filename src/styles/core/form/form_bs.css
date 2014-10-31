@@ -1,0 +1,279 @@
+fieldset legend {
+  margin: 0 0 10px 10px;
+  *line-height: 1.5;   /* IE6-7 */
+}
+.formelement {
+  margin:10px;
+  zoom: 1;
+}
+.formelement:before,
+.formelement:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+label {
+    float: none;
+    width: auto;
+    text-align: left;
+    line-height: 20px;
+    padding-top: 0;
+    display:block;
+}
+.actions {
+  background: #f5f5f5;
+  margin-top: 15px;
+  padding: 15px 10px 16px 10px;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 4px 4px;
+}
+.actions .secondary-action {
+  float: right;
+}
+.actions .secondary-action a {
+  line-height: 30px;
+}
+.actions .secondary-action a:hover {
+  text-decoration: underline;
+}
+.help-inline, .help-block {
+  font-size: 13px;
+  line-height: 18px;
+  color: #666;
+}
+.help-inline {
+  *position: relative;
+  /* IE6-7 */
+
+  *top: -5px;
+  /* IE6-7 */
+
+}
+
+.help-block {
+  display: block;
+  max-width: 600px;
+}
+.inline-inputs {
+  color: #808080;
+}
+.inline-inputs span {
+  padding: 0 2px 0 1px;
+}
+.inputs-list {
+  margin: 0 0 5px;
+  width: 100%;
+}
+.inputs-list li {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+.inputs-list label {
+  display: block;
+  float: none;
+  width: auto;
+  padding: 0;
+  margin-left: 20px;
+  line-height: 20px;
+  text-align: left;
+  white-space: normal;
+}
+.inputs-list label small {
+  font-size: 11px;
+  font-weight: normal;
+}
+.inputs-list .inputs-list {
+  margin-left: 25px;
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+.inputs-list:first-child {
+  padding-top: 2px;
+}
+.inputs-list li + li {
+  padding-top: 2px;
+}
+.inputs-list input[type=radio],
+.inputs-list input[type=checkbox] {
+  margin-bottom: 0;
+  margin-left: -20px;
+  float: left;
+}
+/* .stretched gives 100% width form elements */
+/* probs: selects are 100% including padding, input are 100% excluding padding: temporary fix: .input.select class */
+.stretched .formelement .input, .stretched.formelement .input{padding-right:14px}
+.stretched .formelement .select, .stretched.formelement .select, .stretched .formelement input[type="search"], .stretched.formelement input[type="search"]{padding-right:0}
+.stretched .formelement input[type="text"], .stretched.formelement input[type="text"],
+.stretched .formelement input[type="password"], .stretched.formelement input[type="password"],
+.stretched .formelement input[type="url"], .stretched.formelement input[type="url"],
+.stretched .formelement input[type="phone"], .stretched.formelement input[type="phone"],
+.stretched .formelement input[type="tel"], .stretched.formelement input[type="tel"],
+.stretched .formelement input[type="search"], .stretched.formelement input[type="search"],
+.stretched .formelement input[type="email"], .stretched.formelement input[type="email"],
+.stretched .formelement input[type="number"], .stretched.formelement input[type="number"],
+.stretched .formelement select, .stretched.formelement select,
+.stretched .formelement textarea, .stretched.formelement textarea {
+    width:100%;
+}
+
+/* 100% searchfield+button, should be way more general  */
+.stretched .formelement .search, .stretched.formelement .search{
+     padding-right:100px;
+     position:relative;
+ }
+
+.stretched .formelement .search button,.stretched.formelement .search button{
+    width:80px;
+    position:absolute;
+    right:0;
+    margin:0
+}
+
+/* NASTY: input type=search box model fix for web-kit */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    .stretched .formelement .searchfix, .stretched.formelement .searchfix{
+        padding-right:0px;
+    }
+}
+/* NASTY: input type=search box model fix for web-kit */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    .stretched .formelement .search.searchfix, .stretched.formelement .search.searchfix{
+        padding-right:90px;
+    }
+}
+
+
+/* Forms, normal -> hform @ 640 */
+
+@media screen and (min-width:640px) {
+
+    .hform640 fieldset{
+        padding-top: 18px;
+    }
+    .hform640 fieldset legend{
+        margin: 0;
+        padding-left:185px;
+        *padding: 0 0 5px 180px;  /* IE6-7 */
+    }
+    .hform640 .input{
+        margin-left: 185px;
+    }
+    .hform640 .formelement{
+        margin: 0 0 15px 0;
+    }
+    .hform640 .formelement > label{
+        padding-top: 3px;
+        line-height: 18px;
+        float: left;
+        width: 165px;
+        text-align: right;
+    }
+    .hform640 .actions{
+        padding-left:185px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .hform768 fieldset{
+        padding-top: 18px;
+    }
+    .hform768 fieldset legend{
+        margin: 0;
+        padding-left:185px;
+        *padding: 0 0 5px 180px;  /* IE6-7 */
+    }
+    .hform768 .input{
+        margin-left: 185px;
+    }
+    .hform768 .formelement{
+        margin: 0 0 15px 0;
+    }
+    .hform768 label{
+        padding-top: 3px;
+        line-height: 18px;
+        float: left;
+        width: 165px;
+        text-align: right;
+    }
+    .hform768 .actions{
+        padding-left:185px;
+    }
+}
+
+
+
+
+
+/*  Inputprototype  */
+.inputprototype input.span1, .inputprototype textarea.span1 { width: 30px !important; }
+.inputprototype input.span2, .inputprototype textarea.span2 { width: 101px !important; }
+.inputprototype input.span3, .inputprototype textarea.span3 { width: 181px !important; }
+.inputprototype input.span4, .inputprototype textarea.span4 { width: 266px !important; }
+.inputprototype input.span5, .inputprototype textarea.span5 { width: 346px !important; }
+.inputprototype input.span6, .inputprototype textarea.span6 { width: 431px !important; }
+.inputprototype input.span7, .inputprototype textarea.span7 { width: 511px !important; }
+.inputprototype input.span8, .inputprototype textarea.span8 { width: 596px !important; }
+.inputprototype input.span9, .inputprototype textarea.span9 { width: 676px !important; }
+.inputprototype input.span10, .inputprototype textarea.span10 {	width: 761px !important; }
+.inputprototype input.span11, .inputprototype textarea.span11 { width: 841px !important; }
+.inputprototype input.span12, .inputprototype textarea.span12 {	width: 926px !important; }
+
+
+@media screen and (min-width:768px) {
+
+    .supamagic fieldset, fieldset.supamagic{
+        padding-top: 18px;
+    }
+    .supamagic fieldset legend, fieldset.supamagic legend{
+        margin: 0;
+        padding-left: 28%;
+        margin-right: 28%;
+        width: 44%;
+    }
+    .supamagic .input{
+        padding:0 30%;
+        margin-right:30%;
+    }
+    .supamagic .formelement, .formelement.supamagic{
+        margin: 0 0 15px 0;
+    }
+    .supamagic .help-block{
+        margin-right: -10px;
+        max-width: none;
+    }
+    .supamagic .formelement>label{
+        padding-top: 3px;
+        line-height: 18px;
+        float: left;
+        width: 28%;
+        text-align: right;
+    }
+    .supamagic .inputs-list label{
+        text-align: left;
+    }
+    .supamagic .collapselist label{
+        text-align: left;
+        width:auto;
+
+    }
+    .supamagic .actions, .actions.supamagic{
+        padding-left:30%
+    }
+}
+/* Inputprototype */
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .formelement { margin:10px 20px; }
+    fieldset legend{ margin:0 0 10px 20px; }
+    .actions { padding-left: 20px; }
+}
+
+
+

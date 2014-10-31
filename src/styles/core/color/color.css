@@ -1,0 +1,121 @@
+﻿/* Background colors, NB! Always try to use predefined modules instead of using these */
+.bg-black{background-color:#000 !important}
+.bg-dk-gray{background-color:#666 !important}
+.bg-lt-gray{background-color:#eee !important}
+.bg-pale-gray{background-color:#f5f5f5 !important}
+.bg-white{background-color:#fff !important}
+
+.bg-dkdk-blue{background-color:#000066 !important}
+.bg-dk-blue{background-color:#0099ff !important}
+.bg-lt-blue{background-color:#ddeeff !important}
+.bg-pale-blue{background-color:#f1f8ff !important}
+
+.bg-contrast{background-color:#444 !important;}
+.bg-firm{background-color:#ff6600 !important;}
+
+.bg-snotgreen{background-color:#d2e286 !important}
+.bg-pissyellow{background-color:#ffff99 !important}
+
+
+/* Gråskala */
+.sharp, a.sharp{color:#04253c}
+.opaque, a.opaque{color:#4f6676}
+.neutral, a.neutral{color:#9ba8b1}
+.pale, a.pale{color:#cdd3d8}
+.bare, a.bare{color:#edf0f1}
+.bright, .contrast, a.bright, a.contrast{color:#ffffff;}
+.bg-sharp{background-color:#04253c !important}
+.bg-opaque{background-color:#4f6676 !important}
+.bg-neutral{background-color:#9ba8b1 !important}
+.bg-pale{background-color:#cdd3d8 !important}
+.bg-bare{background-color:#edf0f1 !important}
+.bg-bright{background-color:#ffffff !important}
+
+/* Blåskala */
+.blue-dk, a.blue-dk{color:#0077ee} /* Ikoner,lenker */
+.blue, a.blue{color:#0099ff}
+.blue-lt, a.blue-lt{color:#4cb7ff}
+.blue-ltlt, a.blue-ltlt{color:#99d6ff}
+.blue-xlt, a.blue-xlt{color:#e5f5ff}
+.blue-xxlt, a.blue-xxlt{color:#f2faff}
+.blue-greyish, a.blue-greyish{color:#e9eff5}
+.bg-blue-dk{background-color:#0077ee !important} /* Knapper */ 
+.bg-blue{background-color:#0099ff !important} /* Knapper */ 
+.bg-blue-lt{background-color:#4cb7ff !important} /* Menylinje, (implementert med 0099ff med alpha 0.7) */
+.bg-blue-ltlt{background-color:#99d6ff !important} /* Disabled knapp, markeringer?  */
+.bg-blue-xlt{background-color:#e5f5ff !important}
+.bg-blue-xxlt{background-color:#f2faff !important}
+.bg-blue-greyish{background-color:#e9eff5 !important} /* Finn main-bg */
+
+
+/* Sekundærfarger */
+.lilac, a.lilac{color:#7863c8}
+.lilac-lt, a.lilac-lt{color:#c9c1e9}
+.lilac-xlt, a.lilac-xlt{color:#f1eff9}
+.bg-lilac{background-color:#7863c8 !important}
+.bg-lilac-lt{background-color:#c9c1e9 !important}
+.bg-lilac-xlt{background-color:#f1eff9 !important}
+
+
+.purple, a.purple{color:#8b31e7}
+.purple-lt, a.purple-lt{color:#d1adf5}
+.purple-xlt, a.purple-xlt{color:#e8d6fa}
+.bg-purple{background-color:#8b31e7 !important}
+.bg-purple-lt{background-color:#d1adf5 !important}
+.bg-purple-xlt{background-color:#e8d6fa !important}
+
+
+.candy, a.candy{color:#ff3bcf}
+.candy-lt, a.candy-lt{color:#ffb1ec}
+.candy-xlt, a.candy-xlt{color:#ffebfa}
+.bg-candy{background-color:#ff3bcf !important}
+.bg-candy-lt{background-color:#ffb1ec !important}
+.bg-candy-xlt{background-color:#ffebfa !important}
+
+
+.red, .negative, a.red, .negative, a.negative{color:#e7384a}
+.red-lt, a.red-lt{color:#ee7380}
+.red-xlt, a.red-xlt{color:#fbe3e6}
+.bg-red, .bg-negative{background-color:#e7384a !important}
+.bg-red-lt{background-color:#ee7380 !important}
+.bg-red-xlt{background-color:#fbe3e6 !important}
+
+.lemon, a.lemon{color:#fbdd25}
+.lemon-lt, a.lemon-lt{color:#fdf1a8}
+.lemon-xlt, a.lemon-xlt{color:#fef8e4}
+.bg-lemon{background-color:#fbdd25 !important}
+.bg-lemon-lt{background-color:#fbf1a8 !important}
+.bg-lemon-xlt{background-color:#fef8e4 !important}
+
+.rust, a.rust{color:#e78007}
+.rust-lt, a.rust-lt{color:#fe8d08}
+.rust-xlt, a.rust-xlt{color:#feefd2}
+.bg-rust{background-color:#e78007 !important}
+.bg-rust-lt{background-color:#fe8d08 !important}
+.bg-rust-xlt{background-color:#feefd2 !important}
+
+.lime, a.lime{color:#cad522}
+.lime-lt, a.lime-lt{color:#eef1b6}
+.lime-xlt, a.lime-xlt{color:#f6f8da}
+.bg-lime{background-color:#cad522 !important}
+.bg-lime-lt{background-color:#eef1b6 !important}
+.bg-lime-xlt{background-color:#f6f8da !important}
+
+.green, a.green, .positive, a.positive{color:#3b7908}
+.green-lt, a.green-lt{color:#7bb02d}
+.green-xlt, a.green-xlt{color:#e4efd4}
+.bg-green, .bg-positive{background-color:#3b7908 !important}
+.bg-green-lt{background-color:#7bb02d !important}
+.bg-green-xlt{background-color:#e4efd4 !important}
+
+
+/*Vise farge for energiklasse pa eiendom objektsider*/
+
+.energylabel.morkegronn {background-color: #009247;}
+.energylabel.lysegronn  {background-color: #92cb51;}
+.energylabel.gul        {background-color: #e2cb23;}
+.energylabel.oransje    {background-color: #f18c31;}
+.energylabel.rod        {background-color: #ca3743;}
+
+
+

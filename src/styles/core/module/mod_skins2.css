@@ -1,0 +1,100 @@
+/* **************** BLOCK SKINS ***************** */
+/* ====== Contour blocks ====== */
+/* ----- internal (extends mod) ----- */
+/* ----- used for modules containing our own content ----- */
+.mod .inner{ border-radius: 2px; ;box-shadow: 0 1px 6px rgba(0,0,0,0.15)}
+
+.mod .inner .hd{ border-radius: 2px 2px 0 0 ; }
+.mod .inner .ft{ border-radius: 0 0 2px 2px ; }
+/* ====== Background blocks ====== */
+
+.mod .inner{ background-color:#ffffff }
+.mod.internal .inner{ background-color:#fff }
+.mod.external .inner{ background-color:#eeeeee }
+.mod.commercial .inner{ background-color:#ffff99 }
+
+
+
+.mod.transparent .inner { background:transparent; }
+.mod .inner .hd,.mod .inner .ft{ background-color:#ddeeff }
+
+.mod.buyadd .inner{
+    background: #fff179;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZjE3OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmQxMTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #fff179 0%, #ffd110 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff179), color-stop(100%,#ffd110));
+    background: -webkit-linear-gradient(top,  #fff179 0%,#ffd110 100%);
+    background: -o-linear-gradient(top,  #fff179 0%,#ffd110 100%);
+    background: -ms-linear-gradient(top,  #fff179 0%,#ffd110 100%);
+    background: linear-gradient(to bottom,  #fff179 0%,#ffd110 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff179', endColorstr='#ffd110',GradientType=0 );
+}
+.mod.security .inner{
+    background: #79b739;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc5YjczOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2MzkyMzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #79b739 0%, #639232 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#79b739), color-stop(100%,#639232));
+    background: -webkit-linear-gradient(top,  #79b739 0%,#639232 100%);
+    background: -o-linear-gradient(top,  #79b739 0%,#639232 100%);
+    background: -ms-linear-gradient(top,  #79b739 0%,#639232 100%);
+    background: linear-gradient(to bottom,  #79b739 0%,#639232 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79b739', endColorstr='#639232',GradientType=0 );
+}
+
+/*.mod.creazyeks .inner{ background:transparent url("skin/historiskkart.png") no-repeat 0 0; }
+.mod.creazyeks .hd,.mod.creazyeks .ft{background-color: rgba(255,255,255,0.8);}
+*/
+
+.mod.broadcast .inner .hd { border-radius: 2px 2px 0 0; background-image: url("/img/response-message-info.png"); background-repeat: no-repeat; background-position: 20px 10px; }
+.mod.broadcast h3 { margin-left: 0; }
+.mod.broadcast h4 { padding-left: 30px; }
+.mod.broadcast .showhideswitch { cursor: pointer; }
+.mod.broadcast.severity-trivial .inner .hd{ background-color:#669933; color:#fff; box-shadow: inset 0 -18px 0px rgba(0,0,0,.09); }
+.mod.broadcast.severity-NORMAL .inner .hd,
+.mod.broadcast.responseseverity0 .inner .hd { background-color:#fab900; color:#fff; box-shadow: inset 0 -18px 0px rgba(0,0,0,.03); }
+.mod.broadcast.severity-SEVERE .inner .hd{background-color:#cc0000;color:#fff;border:1px solid #cc0000; box-shadow: inset 0 -18px 0px rgba(0,0,0,.06); }
+.mod.broadcast .messages:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-left: 25px;
+    margin-top: -5px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.mod.broadcast.severity-NORMAL .messages:before,
+.mod.broadcast.responseseverity0 .messages:before { background: #fab900; box-shadow: inset 0 -18px 0 rgba(0,0,0,.03); }
+.mod.broadcast.severity-SEVERE .messages:before { background: #cc0000; box-shadow: inset 0 -18px 0 rgba(0,0,0,.06); }
+.mod.broadcast.severity-trivial .messages:before { background: #669933; box-shadow: inset 0 -18px 0 rgba(0,0,0,.09); }
+.mod.broadcast .icon { display: block; height: 16px; width: 12px; background-image:url("/styles/broadcast/images/response-message-hide.png"); background-repeat: no-repeat; }
+.mod.broadcast .icon.hide { background-image:url("/styles/broadcast/images/response-message-show.png"); }
+.mod.broadcast .messages p { margin-left: 0; }
+
+/* overstyrer mod-bakgrunner for objektsider */
+.mod .lastUnit .mod .inner{ background:transparent;box-shadow:none }
+.mod .mod .inner{ background:transparent;box-shadow:none }
+.mod .lastUnit .mod .inner .hd,.mod .lastUnit .mod .inner .ft{ background:transparent;color:#000; }
+
+/* ====== Block headers and footers ====== */
+/*.hd h1, .hd h2, .hd h3, .hd h4, .hd h5, .hd h6{padding: 5px 10px;}*/
+.section{background: #e9e9e9 url(skin/header.png) repeat-x left bottom; color:#de2c72;font-size:120%;/*padding:5px 10px;*/}
+.section h1,.section h2,.section h3,.section h4,.section h5,.section h6{font-size:100%;color:#de2c72;/*padding:0;*/}
+.act{background-color:#e9e9e9;}
+.topper{background: #fff url(skin/header_gradient_light.png) repeat-x left bottom;color: #4D4D4D;font-size:120%;padding:5px 10px;}
+.topper h1,.topper h2,.topper h3,.topper h4,.topper h5,.topper h6{font-size:100%;color:#4D4D4D;padding:0;}
+.tabPosLeft .topper li,.tabPosRight .topper li{background: #fff url(skin/header_gradient_light.png) repeat-x left bottom;/* belongs in topper */}
+.tabPosBottom .topper{
+  background-image:-webkit-gradient(linear, 0% 0%, 0% 40%, from(#E2E2E2), to(#FFFFFF));
+  background-image:-moz-linear-gradient(0% 8% 270deg, #E2E2E2, #FFFFFF, #FFFFFF 77%);}
+.bam{background: #00477a url(skin/header_glossy.png) repeat-x left top;color: #fff;font-size:120%;padding:5px 10px;}
+.bam h1,.bam h2,.bam h3,.bam h4,.bam h5,.bam h6{font-size:100%;color:#fff;padding:0;}
+.online{background: #9a9400 url(skin/online.png) repeat-x left top;color: #000;font-size:120%;padding:5px 10px;}
+.online h1,.online h2,.online h3,.online h4,.online h5,.online h6{font-size:100%;color:#000;padding:0;}
+.help{background: #b20029 url(skin/help.png) repeat-x left top;color: #fff;font-size:120%;padding:5px 10px;}
+.help h1,.help h2,.help h3,.help h4,.help h5,.help h6{font-size:100%;color:#fff;padding:0;}
+.info{background: #636363 url(skin/info.png) repeat-x left top;color: #fff;font-size:120%;padding:5px 10px;}
+.info h1,.info h2,.info h3,.info h4,.info h5,.info h6{font-size:100%;color:#fff;padding:0;}

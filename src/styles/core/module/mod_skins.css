@@ -1,0 +1,113 @@
+/* **************** BLOCK SKINS ***************** */
+/* ====== Contour blocks ====== */
+/* ----- internal (extends mod) ----- */
+/* ----- used for modules containing our own content ----- */
+.mod .inner{ border-radius: 2px; }
+.mod .inner .hd{ border-radius: 2px 2px 0 0 ; }
+.mod .inner .ft{ border-radius: 0 0 2px 2px ; }
+/* ====== Background blocks ====== */
+
+.mod .inner{ background-color:#ffffff }
+.mod.commercial .inner{ background-color:#ffff99 }
+
+.mod.transparent > .inner { background:transparent; }
+.mod.transparent .hd,
+.mod.transparent .ft { border-radius: 2px; }
+/*
+.mod.creazyeks .inner{ background:transparent url("skin/historiskkart.png") no-repeat 0 0; }
+.mod.creazyeks .hd,.mod.creazyeks .ft{background-color: rgba(255,255,255,0.8);}
+*/
+
+.mod.broadcast .inner .hd { border-radius: 2px 2px 0 0; background-image: url("/img/response-message-info.png"); background-repeat: no-repeat; background-position: 20px 10px; }
+.mod.broadcast h3 { margin-left: 0; }
+.mod.broadcast h4 { padding-left: 30px; }
+.mod.broadcast .showhideswitch { cursor: pointer; }
+.mod.broadcast.severity-trivial .inner .hd{ background-color:#669933; color:#fff; box-shadow: inset 0 -18px 0px rgba(0,0,0,.09); }
+.mod.broadcast.severity-NORMAL .inner .hd,
+.mod.broadcast.responseseverity0 .inner .hd { background-color:#fab900; color:#fff; box-shadow: inset 0 -18px 0px rgba(0,0,0,.03); }
+.mod.broadcast.severity-SEVERE .inner .hd{background-color:#cc0000;color:#fff;border:1px solid #cc0000; box-shadow: inset 0 -18px 0px rgba(0,0,0,.06); }
+.mod.broadcast .messages:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-left: 25px;
+    margin-top: -5px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.mod.broadcast.severity-NORMAL .messages:before,
+.mod.broadcast.responseseverity0 .messages:before { background: #fab900; box-shadow: inset 0 -18px 0 rgba(0,0,0,.03); }
+.mod.broadcast.severity-SEVERE .messages:before { background: #cc0000; box-shadow: inset 0 -18px 0 rgba(0,0,0,.06); }
+.mod.broadcast.severity-trivial .messages:before { background: #669933; box-shadow: inset 0 -18px 0 rgba(0,0,0,.09); }
+.mod.broadcast .icon { display: block; height: 16px; width: 12px; background-image:url("/styles/broadcast/images/response-message-hide.png"); background-repeat: no-repeat; }
+.mod.broadcast .icon.hide { background-image:url("/styles/broadcast/images/response-message-show.png"); }
+.mod.broadcast .messages p { margin-left: 0; }
+/**  nasty hack som ligger inline i JSP p� release branchen... **/
+.mod.broadcast {margin-bottom: 50px !important;}
+.mod.broadcast .inner {padding-top: 0 !important;}
+
+
+/* overstyrer mod-bakgrunner for objektsider */
+.mod .lastUnit .mod .inner{ background:transparent }
+.mod .lastUnit .mod .inner .hd,.mod .lastUnit .mod .inner .ft{ background:transparent;color:#000; }
+
+
+.mod.navblock .bd{
+    display: inline-table;
+    width: 100%;
+}
+.mod.navblock a{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height:50px;
+}
+.mod.navblock.toolbar a{height:60px}
+.mod.navblock .inner:hover, .mod.navblock .inner:focus {
+    /*box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), inset 0 -25px 30px 0 rgba(0, 61, 162, .05);*/
+    background-color: #fafafb!important;
+}
+/**  Retardification av markedssider **/
+.mod.navblock2 .bd{
+    display: inline-table;
+    width: 100%;
+}
+
+.mod.navblock2 p.lines1{
+    height:25px;
+}
+.mod.navblock2 p.lines2{
+    height:40px;
+}
+.mod.navblock2 p.lines3{
+    height:60px;
+}
+.mod.navblock2 p.lines4{
+    height:80px;
+}
+.mod.navblock2.toolbar a{height:60px}
+
+
+/* ====== Block headers and footers ====== */
+/*.hd h1, .hd h2, .hd h3, .hd h4, .hd h5, .hd h6{padding: 5px 10px;}*/
+.section{background: #e9e9e9 url(skin/header.png) repeat-x left bottom; color:#de2c72;font-size:120%;/*padding:5px 10px;*/}
+.section h1,.section h2,.section h3,.section h4,.section h5,.section h6{font-size:100%;color:#de2c72;/*padding:0;*/}
+.act{background-color:#e9e9e9;}
+.topper{background: #fff url(skin/header_gradient_light.png) repeat-x left bottom;color: #4D4D4D;font-size:120%;padding:5px 10px;}
+.topper h1,.topper h2,.topper h3,.topper h4,.topper h5,.topper h6{font-size:100%;color:#4D4D4D;padding:0;}
+.tabPosLeft .topper li,.tabPosRight .topper li{background: #fff url(skin/header_gradient_light.png) repeat-x left bottom;/* belongs in topper */}
+.tabPosBottom .topper{
+  background-image:-webkit-gradient(linear, 0% 0%, 0% 40%, from(#E2E2E2), to(#FFFFFF));
+  background-image:-moz-linear-gradient(0% 8% 270deg, #E2E2E2, #FFFFFF, #FFFFFF 77%);}
+.bam{background: #00477a url(skin/header_glossy.png) repeat-x left top;color: #fff;font-size:120%;padding:5px 10px;}
+.bam h1,.bam h2,.bam h3,.bam h4,.bam h5,.bam h6{font-size:100%;color:#fff;padding:0;}
+.online{background: #9a9400 url(skin/online.png) repeat-x left top;color: #000;font-size:120%;padding:5px 10px;}
+.online h1,.online h2,.online h3,.online h4,.online h5,.online h6{font-size:100%;color:#000;padding:0;}
+.help{background: #b20029 url(skin/help.png) repeat-x left top;color: #fff;font-size:120%;padding:5px 10px;}
+.help h1,.help h2,.help h3,.help h4,.help h5,.help h6{font-size:100%;color:#fff;padding:0;}
+.info{background: #636363 url(skin/info.png) repeat-x left top;color: #fff;font-size:120%;padding:5px 10px;}
+.info h1,.info h2,.info h3,.info h4,.info h5,.info h6{font-size:100%;color:#fff;padding:0;}

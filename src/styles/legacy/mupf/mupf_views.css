@@ -1,0 +1,186 @@
+.mupf .view-saveditems #bar-content {overflow: hidden;}
+.mupf .view-saveditems .content-view {
+    overflow-x: auto;
+    position: absolute;
+    z-index: 1;
+    top: 86px;
+    bottom: 25px;
+    width: 100%;
+    -webkit-transform: translate3d(0,0,0); /* hack for lagging in chrome with flash player */
+}
+
+.mupf .view-saveditems .saved-item .img-wrapper{
+    position: relative;
+    z-index: 1;
+    max-height: 100%;
+
+}
+.mupf .view-saveditems .saved-item .img-wrapper a{
+   display: block;
+}
+.mupf .view-saveditems .saved-item .img-wrapper img {
+    max-width:120px;
+}
+
+.mupf .view-saveditems .item-crop-img {
+    width: 125px;
+    padding: 0 10px 10px 25px;
+    height: 86px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.mupf .view-saveditems .saved-item h3 {
+    font-size: 12px;
+    line-height: 15px;
+}
+.mupf .view-saveditems .saved-item .lastUnit h3,
+.mupf .view-saveditems .saved-item .lastUnit ul {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.mupf .view-saveditems .content-view-actions {
+    height: 25px;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid #b2b2b2;
+    margin: 0 10px;
+
+}
+
+.mupf .view-saveditems .current-list-actions {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    height: 20px;
+}
+.mupf .view-saveditems .current-list-actions a {
+    font-size: 12px;
+    line-height: 20px;
+    border-right: 1px solid #b2b2b2;
+    padding-right: 5px;
+}
+.mupf .view-saveditems .current-list-actions a:last-child {
+    border-right: 0;
+}
+
+.mupf .view-saveditems .content-items-actions {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+}
+.mupf .view-saveditems .content-items-actions  .sort-order {
+    float: right;
+}
+
+.mupf .view-saveditems .list-bulk-action .button {
+    font-size: 11px;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+    line-height: 15px;
+    padding: 5px 8px;
+}
+
+.list-bulk-action,
+.active-list-bulk-action .content-items-actions,
+.active-list-bulk-action .current-list-actions {
+    display: none;
+}
+
+.mupf .active-list-bulk-action .content-view-actions{
+    border-bottom-color: transparent;
+}
+.active-list-bulk-action .list-bulk-action {
+    display: block;
+}
+
+.view-saveditems #bar-content {
+    overflow:  hidden;
+}
+
+.content-items-actions span.active  {
+    display: none;
+}
+
+.mupf .view-saveditems .mupf-checkbox {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    left: -19px;
+    top: 50%;
+    width: 15px;
+    height: 1px;
+    overflow: visible;
+}
+.mupf .view-saveditems .mupf-checkbox input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding:0;
+    position: relative;
+    top: -8px;
+
+}
+
+.mupf .view-saveditems .attributes {
+    font-size: 11px;
+    line-height: 13px;
+}
+.mupf .view-saveditems .attr-key {
+    color: #666;
+}
+.mupf .view-saveditems .attr-value {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* saved search */
+.mupf .view-savedsearch .content-view {
+    overflow-x: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    bottom: 25px;
+    width: 100%;
+}
+.mupf .view-savedsearch li {
+    padding: 10px; height: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px inset #BBB;
+}
+.mupf .view-savedsearch li:first-child { border-top: 0; }
+.mupf .view-savedsearch li:last-child { border-bottom: 0; }
+
+.mupf .view-savedsearch li a { line-height: 20px; float: left;}
+.mupf .view-savedsearch .edit-search { float: right; font-size: 11px;}
+
+/* FEEDBACK */
+.view-pagefeedback .mupf-feedback-form label {
+    text-align: center;
+    cursor: pointer;
+}
+.view-pagefeedback .mupf-feedback-form label:hover {
+    font-weight: bold;
+}
+.view-pagefeedback .mupf-feedback-form textarea {
+    width: 96%;
+    display: block;
+}
+
+.inline-dialog-bar .possible-folders-list {
+    overflow-x: auto;
+}
+/* header icons */
+#bar-title h2, .history-title {
+    background: url("/img/user/mupf/mupf_icons.png") -2px -4px no-repeat;
+    padding-left: 28px;
+    vertical-align: bottom;
+}
+.history-title {background-position: -2px -67px;}
+.view-savedsearch #bar-title h2 {background-position: -2px -34px;}
+.view-pagefeedback #bar-title h2 {background-position: -2px -102px;}
+.view-finnbox #bar-title h2 {background-position: -2px -166px;}
+

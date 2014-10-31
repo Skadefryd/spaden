@@ -1,0 +1,245 @@
+.icon{
+    display:inline-block;
+}
+.icon.set20px{
+    height:20px;
+    width:20px;
+    background:transparent url('../../../../img/icons/set20px.png') no-repeat;
+}
+.icon-text {
+    height: 20px;
+    line-height: 20px;
+}
+.set20px.lagre-funn{ background-position: 0 0 }
+.set20px.lagre-funn:hover,
+.icon-text:hover .set20px.lagre-funn { background-position: -40px 0 }
+.set20px.lagre-funn:active{ background-position: -80px 0 }
+.set20px.lagre-funn.active,
+.icon-text.active .set20px.lagre-funn { background-position: 0 -40px;}
+.set20px.lagre-funn.active:hover{ background-position: -40px -40px;}
+.set20px.lagre-funn.active:active{ background-position: -80px -40px;}
+.set20px.vurdering{ background-position: 0 -80px }
+.set20px.vurdering:hover,
+.icon-text:hover .set20px.vurdering { background-position: -40px -80px }
+.set20px.vurdering:active{ background-position: -80px -80px }
+.set20px.vurdering.active,
+.icon-text.active .set20px.vurdering { background-position: 0 -120px}
+.set20px.vurdering.active:hover{ background-position: -40px -120px;}
+.set20px.vurdering.active:active{ background-position: -80px -120px;}
+.set20px.epost{ background-position: 0 -160px }
+.set20px.epost:hover,
+.icon-text:hover .set20px.epost { background-position: -40px -160px }
+.set20px.epost:active,
+.set20px.epost.active,
+.icon-text.active .set20px.epost { background-position: -80px -160px }
+.set20px.facebook{ background-position: 0 -200px}
+.set20px.facebook:hover,
+.icon-text:hover .set20px.facebook { background-position: -40px -200px;}
+.set20px.facebook:active,
+.set20px.facebook.active,
+.icon-text.active .set20px.facebook { background-position: -80px -200px;}
+.set20px.twitter{ background-position: 0 -240px }
+.set20px.twitter:hover,
+.icon-text:hover .set20px.twitter { background-position: -40px -240px }
+.set20px.twitter:active,
+.set20px.twitter.active,
+.icon-text.active .set20px.twitter { background-position: -80px -240px }
+.set20px.linkedin { background-position: 0 -280px}
+.set20px.linkedin:hover,
+.icon-text:hover .set20px.linkedin { background-position: -40px -280px;}
+.set20px.linkedin:active,
+.set20px.linkedin.active,
+.icon-text.active .set20px.linkedin { background-position: -80px -280px;}
+.set20px.printer{ background-position: 0 -320px }
+.set20px.printer:hover,
+.icon-text:hover .set20px.printer { background-position: -40px -320px }
+.set20px.printer:active,
+.set20px.printer.active,
+.icon-text.active .set20px.printer { background-position: -80px -320px }
+.set20px.rediger{ background-position: 0 -360px}
+.set20px.rediger:hover,
+.icon-text:hover .set20px.rediger { background-position: -40px -360px;}
+.set20px.rediger:active,
+.set20px.rediger.active,
+.icon-text.active .set20px.rediger { background-position: -80px -360px;}
+.set20px.visning-liste{ background-position: 0 -400px }
+.set20px.visning-liste:hover,
+.icon-text:hover .set20px.visning-liste { background-position: -40px -400px }
+.set20px.visning-liste:active,
+.set20px.visning-liste.active,
+.icon-text.active .set20px.visning-liste { background-position: -80px -400px }
+.set20px.visning-rute4{ background-position: 0 -440px}
+.set20px.visning-rute4:hover,
+.icon-text:hover .set20px.visning-rute4 { background-position: -40px -440px;}
+.set20px.visning-rute4:active,
+.set20px.visning-rute4.active,
+.icon-text.active .set20px.visning-rute4 { background-position: -80px -440px;}
+.set20px.visning-rute9{ background-position: 0 -480px}
+.set20px.visning-rute9:hover,
+.icon-text:hover .set20px.visning-rute9 { background-position: -40px -480px;}
+.set20px.visning-rute9:active,
+.set20px.visning-rute9.active,
+.icon-text.active .set20px.visning-rute9 { background-position: -80px -480px;}
+.set20px.visning-kart{ background-position: 0 -520px }
+.set20px.visning-kart:hover,
+.icon-text:hover .set20px.visning-kart { background-position: -40px -520px }
+.set20px.visning-kart:active,
+.set20px.visning-kart.active,
+.icon-text.active .set20px.visning-kart { background-position: -80px -520px }
+.set20px.kalender{ background-position: 0 -560px}
+.set20px.kalender:hover,
+.icon-text:hover .set20px.kalender { background-position: -40px -560px;}
+.set20px.kalender:active,
+.set20px.kalender.active,
+.icon-text.active .set20px.kalender { background-position: -80px -560px;}
+.set20px.skriv{ background-position: 0 -600px}
+.set20px.skriv:hover,
+.icon-text:hover .set20px.skriv { background-position: -40px -600px;}
+.set20px.skriv:active,
+.set20px.skriv.active,
+.icon-text.active .set20px.skriv { background-position: -80px -600px;}
+.set20px.ekstern-lenke{ background-position: 0 -640px }
+.set20px.ekstern-lenke:hover,
+.icon-text:hover .set20px.ekstern-lenke { background-position: -40px -640px }
+.set20px.ekstern-lenke:active,
+.set20px.ekstern-lenke.active,
+.icon-text.active .set20px.ekstern-lenke { background-position: -80px -640px }
+.set20px.vedlegg{ background-position: 0 -680px}
+.set20px.vedlegg:hover,
+.icon-text:hover .set20px.vedlegg { background-position: -40px -680px;}
+.set20px.vedlegg:active,
+.set20px.vedlegg.active,
+.icon-text.active .set20px.vedlegg { background-position: -80px -680px;}
+.set20px.del{ background-position: 0 -720px}
+.set20px.del:hover,
+.icon-text:hover .set20px.del { background-position: -40px -720px;}
+.set20px.del:active,
+.set20px.del.active,
+.icon-text.active .set20px.del { background-position: -80px -720px;}
+.set20px.innstillinger{ background-position: 0 -760px }
+.set20px.innstillinger:hover,
+.icon-text:hover .set20px.innstillinger { background-position: -40px -760px }
+.set20px.innstillinger:active,
+.set20px.innstillinger.active,
+.icon-text.active .set20px.innstillinger { background-position: -80px -760px }
+.set20px.sms{ background-position: 0 -800px}
+.set20px.sms:hover,
+.icon-text:hover .set20px.sms { background-position: -40px -800px;}
+.set20px.sms:active,
+.set20px.sms.active,
+.icon-text.active .set20px.sms { background-position: -80px -800px;}
+.set20px.dialog{ background-position: 0 -840px}
+.set20px.dialog:hover,
+.icon-text:hover .set20px.dialog { background-position: -40px -840px;}
+.set20px.dialog:active,
+.set20px.dialog.active,
+.icon-text.active .set20px.dialog { background-position: -80px -840px;}
+.set20px.zoom-inn{ background-position: 0 -880px }
+.set20px.zoom-inn:hover,
+.icon-text:hover .set20px.zoom-inn { background-position: -40px -880px }
+.set20px.zoom-inn:active,
+.set20px.zoom-inn.active,
+.icon-text.active .set20px.zoom-inn { background-position: -80px -880px }
+.set20px.zoom-ut{ background-position: 0 -920px}
+.set20px.zoom-ut:hover,
+.icon-text:hover .set20px.zoom-ut { background-position: -40px -920px;}
+.set20px.zoom-ut:active,
+.set20px.zoom-ut.active,
+.icon-text.active .set20px.zoom-ut { background-position: -80px -920px;}
+.set20px.min-lokasjon{ background-position: 0 -960px}
+.set20px.min-lokasjon:hover,
+.icon-text:hover .set20px.min-lokasjon { background-position: -40px -960px;}
+.set20px.min-lokasjon:active,
+.set20px.min-lokasjon.active,
+.icon-text.active .set20px.min-lokasjon { background-position: -80px -960px;}
+.set20px.kryss1{ background-position: 0 -1000px }
+.set20px.kryss1:hover,
+.icon-text:hover .set20px.kryss1 { background-position: -40px -1000px }
+.set20px.kryss1:active,
+.set20px.kryss1.active,
+.icon-text.active .set20px.kryss1 { background-position: -80px -1000px }
+.set20px.kryss2{ background-position: 0 -1040px}
+.set20px.kryss2:hover,
+.icon-text:hover .set20px.kryss2 { background-position: -40px -1040px;}
+.set20px.kryss2:active,
+.set20px.kryss2.active,
+.icon-text.active .set20px.kryss2 { background-position: -80px -1040px;}
+.set20px.checked{ background-position: 0 -1080px }
+.set20px.checked:hover,
+.icon-text:hover .set20px.checked { background-position: -40px -1080px }
+.set20px.checked:active,
+.set20px.checked.active,
+.icon-text.active .set20px.checked { background-position: -80px -1080px }
+.set20px.varsel{ background-position: 0 -1120px}
+.set20px.varsel:hover,
+.icon-text:hover .set20px.varsel { background-position: -40px -1120px;}
+.set20px.varsel:active,
+.set20px.varsel.active,
+.icon-text.active .set20px.varsel { background-position: -80px -1120px;}
+.set20px.statuskryss{ background-position: -120px -1040px}
+.set20px.statuscheck{ background-position: -120px -1080px}
+.set20px.statusvarsel{ background-position: -120px -1120px}
+.set20px.expand{ background-position: 0 -1240px}
+.set20px.expand:hover,
+.icon-text:hover .set20px.expand { background-position: -40px -1240px;}
+.set20px.expand:active,
+.set20px.expand.active,
+.icon-text.active .set20px.expand { background-position: -80px -1240px;}
+.set20px.collapse{ background-position: 0 -1280px}
+.set20px.collapse:hover,
+.icon-text:hover .set20px.collapse { background-position: -40px -1280px;}
+.set20px.collapse:active,
+.set20px.collapse.active,
+.icon-text.active .set20px.collapse { background-position: -80px -1280px;}
+.set20px.forrige{ background-position: 0 -1320px}
+.set20px.forrige:hover,
+.icon-text:hover .set20px.forrige { background-position: -40px -1320px;}
+.set20px.forrige:active,
+.set20px.forrige.active,
+.icon-text.active .set20px.forrige { background-position: -80px -1320px;}
+.set20px.neste{ background-position: 0 -1360px}
+.set20px.neste:hover,
+.icon-text:hover .set20px.neste { background-position: -40px -1360px;}
+.set20px.neste:active,
+.set20px.neste.active,
+.icon-text.active .set20px.neste { background-position: -80px -1360px;}
+.set20px.replied { background-position: 0 -1400px}
+.set20px.images{ background-position: 0 -1440px}
+.set20px.images:hover,
+.icon-text:hover .set20px.images { background-position: -40px -1440px;}
+.set20px.images:active,
+.set20px.images.active,
+.icon-text.active .set20px.images { background-position: -80px -1440px;}
+.set20px.video{ background-position: 0 -1480px}
+.set20px.video:hover,
+.icon-text:hover .set20px.video { background-position: -40px -1480px;}
+.set20px.video:active,
+.set20px.video.active,
+.icon-text.active .set20px.video { background-position: -80px -1480px;}
+
+input.hasDatepicker {
+    background-image: url('/img/icons/set20px.png');
+    background-repeat: no-repeat;
+    background-position: right -1159px;
+}
+input.hasDatepicker:hover, input.hasDatepicker:focus {
+    background-position: right -1199px;
+}
+
+/* common finnn delete icon - DEPRECATED due to .icon.danger? */
+.deleticon{
+    background: url("http://cache.finn.no/styles/createalert_unselect.gif") no-repeat 0 0;width:21px;height:13px
+}
+
+/* This is to avoid flash of unstyled content while the font has not loaded */
+.iconsize1,
+.iconsize2,
+.iconsize3,
+.iconsize4 {
+    display: inline-block;
+    width: 1em;
+}
+.iconsize1  {font-size: 1.0em !important;}
+.iconsize2  {font-size: 1.4em !important;}
+.iconsize3  {font-size: 1.6em !important;}
+.iconsize4  {font-size: 2.0em !important;}

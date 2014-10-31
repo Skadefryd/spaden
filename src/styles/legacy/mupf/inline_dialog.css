@@ -1,0 +1,299 @@
+/* object toolbar popup */
+.inline-dialog {
+    display: block;
+    width: 230px;
+    position:absolute;
+    z-index:4;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+.light-inline-dialog {
+    background: #eee;
+    border:  1px solid #b2b2b2;
+    box-shadow: 0px 3px 7px #666;
+    color: #333333;
+}
+
+.inline-dialog.hide {
+    display: none;
+}
+
+.inline-dialog .cancel-inline-dialog {
+    position: absolute;
+    cursor: pointer;
+    z-index: 6;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+    line-height: 15px;
+
+}
+.light-inline-dialog .cancel-inline-dialog {
+    top: 5px;
+    right: 5px;
+    overflow: hidden;
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.pointer-wrapper, .pointer-wrapper .pointer {
+    display: none;
+}
+.dark-inline-dialog .pointer-wrapper {
+    border-color: white;
+}
+.dark-inline-dialog .pointer {
+    border-color: #0183DA;
+}
+
+.light-inline-dialog .pointer-wrapper {
+    border-color: #b2b2b2;
+}
+.light-inline-dialog .pointer {
+    border-color: #eee;
+}
+
+.dark-inline-dialog {
+    /*background: #444;
+    border-color: #444;*/
+    background-color: #0183DA;
+    border-color: white;
+    color: white;
+    border-radius: 5px;
+}
+.dark-inline-dialog a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* styling  content */
+div.light-inline-dialog a {
+    color: #183277;
+}
+
+.inline-dialog label {
+    display: block;
+    margin-bottom: 3px;
+}
+.inline-dialog  p.submit {
+    text-align: right;
+}
+
+.inline-dialog  button {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.inline-dialog  form span.security {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 0.8em;
+}
+.inline-dialog  .errors p,
+.inline-dialog  .error {
+    display: block;
+    color:#cc0000;
+    margin-top: 5px;
+    line-height: 1.2em;
+}
+
+.inline-dialog  li.move_savedad {
+    border-top:  2px groove white;
+}
+.inline-dialog  li.move_savedad:first-child {
+    border-top: 0px;
+}
+.inline-dialog  .possible-folders {
+    padding:  0;
+    margin:  0;
+    list-style-type: none;
+    /*max-height: 300px;
+    overflow-y: auto;*/
+}
+.inline-dialog .possible-folders-list {
+    padding: 0;
+    margin: 0;
+}
+
+.inline-dialog  .possible-folders li a  {
+    display: block;
+    padding:  8px;
+    text-decoration: none;
+
+}
+.inline-dialog  .possible-folders li a:hover  {
+    background-color: #d0d0d0;
+    text-shadow: 1px 2px #eee;
+    text-decoration: none;
+    color: #183277;
+}
+
+.inline-dialog  .possible-folders li.folder-typed a {
+    color: #583277;
+}
+.inline-dialog  .possible-folders li.folder-disabled a {
+    color: #CCC;
+}
+
+
+.inline-dialog  .possible-folders li.addNew {
+    border-top:  2px groove white;
+}
+
+/*.inline-dialog  li.addNew a {
+    display: block;
+    background: url('/img/user/pluss.png') left center no-repeat;
+    padding-left: 15px;
+}*/
+.inline-dialog  li.activeForm.addNew a {
+    display: none;
+}
+.inline-dialog  .addNew form {
+    margin: 10px 0 0 0;
+    display: none;
+
+}
+.inline-dialog  form {
+    width: 100%;
+}
+.inline-dialog  form fieldset {
+    padding:  0;
+    margin:  0;
+    border:  0;
+    width: 100%;
+}
+.inline-dialog  .activeForm a {
+    display: none;
+}
+.inline-dialog  .activeForm .hidden {
+    display: block;
+}
+.inline-dialog  form label {
+    width: 100%;
+    text-align: left;
+}
+.inline-dialog  form textarea,
+.inline-dialog  form input[type='text'],
+.inline-dialog  form input[type='email']{
+    display: block;
+    width: 95%;
+    padding: 5px;
+    clear: both;
+    font-size: 14px;
+}
+.inline-dialog  div.folder {
+    line-height: 25px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px groove white;
+}
+.inline-dialog  div.folder a.comment {
+    display: block;
+}
+.inline-dialog  div.folder:first-child a.comment,
+.inline-dialog  div.showAddCommentForm a.comment {
+    display: none;
+}
+.inline-dialog  div.folder .addCommentForm {
+    display: none;
+}
+.inline-dialog  div.folder:first-child .addCommentForm,
+.inline-dialog  div.showAddCommentForm .addCommentForm {
+    display: block;
+}
+.inline-dialog  ol.comments {
+    padding:  0;
+    margin:  0 10px;
+    list-style-type: none;
+}
+.inline-dialog  ol.comments .comment {
+    position: relative;
+    z-index: 1;
+    min-height: 14px;
+    margin: 0 0 5px 0;
+}
+.inline-dialog  ol.comments .comment .commenter{
+    font-weight: bold;
+    display: inline-block;
+}
+.inline-dialog  ol.comments .comment .timestamp {
+    display: inline-block;
+    margin-right: 5px;
+}
+.inline-dialog  ol.comments .comment .full_text {
+    display: block;
+    margin-bottom: 5px;
+}
+.inline-dialog  ol.comments .comment .trashcan {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    width: 15px;
+    height: 15px;
+    background: url("/img/user/useroptions/ss_delete_comment.gif") 0 0 no-repeat
+}
+.inline-dialog  ol.comments .comment .trashcan:hover {
+    background-position: 0 -49px;
+}
+.inline-dialog  div.more {
+    margin-bottom: 10px;
+}
+.inline-dialog a.more {
+    margin: 10px;
+    display: block;
+}
+.inline-dialog  div.more .possible-folders {
+    display: none;
+}
+
+.inline-dialog  div.empty .possible-folders,
+.inline-dialog  div.showFolders .possible-folders {
+    display: block;
+}
+
+.inline-dialog  div.empty .more,
+.inline-dialog  div.showFolders .more {
+    display: none;
+}
+
+.inline-dialog  a.comment {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.inline-dialog  div.empty .title span {
+    display: none;
+}
+
+.inline-dialog  h1 {
+    font-size: 18px;
+    padding: 0;
+    font-weight: normal;
+}
+
+.inline-dialog p,
+.inline-dialog h1,
+.inline-dialog h2 {
+    margin: 10px;
+}
+.inline-dialog form {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.inline-dialog  form p:last-child,
+.inline-dialog  form p.last,
+.inline-dialog  .inline-dialog-inner p:last-child,
+.inline-dialog  .inline-dialog-inner p.last{
+    margin-bottom: 0 !important; /* motor uses # to select paragraphs */
+}
+.inline-dialog hr {
+   border: 0;
+   border-bottom: 2px groove white;
+}

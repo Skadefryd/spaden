@@ -1,0 +1,158 @@
+.finnbox-conversation {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.finnbox-conversation a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.finnbox-conversation:first-child {
+    border-top-color: white;
+}
+
+.finnbox-conversation.open {
+    background-color: #f5f5f5;
+    border-bottom: 4px solid #ddd;
+    border-top: 4px solid #ddd;
+    padding-top: 9px;
+    margin-top: -2px;
+}
+
+.finnbox-conversation.headerdisabled {
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0;
+}
+
+.finnbox-conversation-open-hide {
+    display: inline-block;
+}
+
+.finnbox-conversation.open .finnbox-conversation-open-hide {
+    display: none;
+}
+
+.finnbox-conversation-open-show {
+    display: none;
+}
+
+.finnbox-conversation.open .finnbox-conversation-open-show {
+    display: block;
+}
+
+.finnbox-profile-container {
+    min-width:15px;
+    height:32px;
+    padding-right: 10px;
+}
+
+.finnbox-profile-image {
+    width:32px;
+    height:32px;
+    border-radius:34px;
+    border:1px solid #DDD;
+    padding:1px;
+    background:#F5F5F5;
+}
+
+.finnbox-conversation .unread {
+    font-weight: bold;
+    color: #000 !important;
+}
+
+.finnbox-conversation .unread .pale {
+    color: #000 !important;
+}
+
+.finnbox-conversation.open .pale {
+    color: #666 !important;
+}
+
+.finnbox-count-1 {
+    display: none;
+}
+
+.finnbox-profile-margin {
+    margin-left: 66px;
+}
+
+.finnbox-replymessage textarea {
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+}
+
+@media (max-width: 480px) {
+
+    .finnbox-replybutton button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .finnbox-profile-margin {
+        margin-left: 51px;
+    }
+
+    .smalltext-lt768 {
+        font-size: 11px;
+    }
+
+    .finnbox-conversation {
+        padding-top: 7px;
+    }
+
+    .finnbox-conversation.open {
+        padding-top: 6px;
+    }
+}
+
+/* Kun det under ska være i bruk framover */
+
+.conversation{
+    position:relative;
+}
+.conversation.lefty{
+    background-color:#4f6676;
+    color:#fff;
+}
+.conversation.righty{
+    background-color:#0077EE;
+    color:#fff;
+}
+.conversation.lefty:after {
+    content: "";
+    top:15px;
+    left: -10px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid #4f6676; 
+    z-index: 1;
+}
+.conversation.righty:after {
+    content: "";
+    top:15px;
+    right: -10px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-left:10px solid #0077EE; 
+    z-index: 1;
+}
+/* test only, have to be rewritten */
+.profile .img{ width:65px;height:65px  }
+.profile .nerd-wrapper{width:45px;height:45px;margin:10px;overflow:hidden;}
+.profile img{ margin-top:-7px}
+
+.profile.active .nerd-wrapper{width:65px;height:65px;margin:0px; }
+.profile.active img{ margin-top:-12px}

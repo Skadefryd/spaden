@@ -1,0 +1,102 @@
+/** 
+ * Spacing classes 
+ * Should be used to modify the default spacing between objects (not between nodes of the same object)
+ * Please use judiciously. You want to be using defaults most of the time, these are exceptions! 
+ * <type><location><size>
+ */
+ /* ====== Default spacing ====== */
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, .media {margin:10px 10px;}
+
+dt, dd { margin: 0 10px; }
+h1, h2, h3, h4, h5, h6,img{padding-bottom:0px;}
+pre{margin: 20px;}
+table h1,table h2,table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl{padding:0;}
+
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
+*/
+
+.ptn,.pvn,.pan{padding-top:0 !important}
+.ptt,.pvt,.pat{padding-top:2px !important}
+.pts,.pvs,.pas{padding-top:5px !important}
+.ptm,.pvm,.pam{padding-top:10px !important}
+.ptl,.pvl,.pal{padding-top:20px !important}
+.prn,.phn,.pan{padding-right:0 !important}
+.prt,.pht,.pat{padding-right:2px !important}
+.prs,.phs,.pas{padding-right:5px !important}
+.prm,.phm,.pam{padding-right:10px !important}
+.prl,.phl,.pal{padding-right:20px !important}
+.pbn,.pvn,.pan{padding-bottom:0 !important}
+.pbt,.pvt,.pat{padding-bottom:2px !important}
+.pbs,.pvs,.pas{padding-bottom:5px !important}
+.pbm,.pvm,.pam{padding-bottom:10px !important}
+.pbl,.pvl,.pal{padding-bottom:20px !important}
+.pln,.phn,.pan{padding-left:0 !important}
+.plt,.pht,.pat{padding-left:2px !important}
+.pls,.phs,.pas{padding-left:5px !important}
+.plm,.phm,.pam{padding-left:10px !important}
+.pll,.phl,.pal{padding-left:20px !important}
+.mtn,.mvn,.man{margin-top:0 !important}
+.mtt,.mvt,.mat{margin-top:2px !important}
+.mts,.mvs,.mas{margin-top:5px !important}
+.mtm,.mvm,.mam{margin-top:10px !important}
+.mtl,.mvl,.mal{margin-top:20px !important}
+.mrn,.mhn,.man{margin-right:0 !important}
+.mrt,.mht,.mat{margin-right:2px !important}
+.mrs,.mhs,.mas{margin-right:5px !important}
+.mrm,.mhm,.mam{margin-right:10px !important}
+.mrl,.mhl,.mal{margin-right:20px !important}
+.mbn,.mvn,.man{margin-bottom:0 !important}
+.mbt,.mvt,.mat{margin-bottom:2px !important}
+.mbs,.mvs,.mas{margin-bottom:5px !important}
+.mbm,.mvm,.mam{margin-bottom:10px !important}
+.mbl,.mvl,.mal{margin-bottom:20px !important}
+.mln,.mhn,.man{margin-left:0 !important}
+.mlt,.mht,.mat{margin-left:2px !important}
+.mls,.mhs,.mas{margin-left:5px !important}
+.mlm,.mhm,.mam{margin-left:10px !important}
+.mll,.mhl,.mal{margin-left:20px !important}
+.r-mlm, .r-mhm, .r-mam {margin-left:5px !important;}
+.r-mrm, .r-mhm, .r-mam {margin-right:5px !important;}
+.r-mtm, .r-mvm, .r-mam {margin-top: 5px !important;}
+.r-mbm, .r-mvm, .r-mam {margin-bottom: 5px !important;}
+.r-mll, .r-mhl, .r-mal {margin-left:10px !important;}
+.r-mrl, .r-mhl, .r-mal {margin-right:10px !important;}
+.r-mtl, .r-mvl, .r-mal {margin-top: 10px !important;}
+.r-mbl, .r-mvl, .r-mal {margin-bottom: 10px !important;}
+.r-plm, .r-phm, .r-pam {padding-left:5px !important;}
+.r-prm, .r-phm, .r-pam {padding-right:5px !important;}
+.r-ptm, .r-pvm, .r-pam {padding-top: 5px !important;}
+.r-pbm, .r-pvm, .r-pam {padding-bottom: 5px !important;}
+.r-pll, .r-phl, .r-pal {padding-left:10px !important;}
+.r-prl, .r-phl, .r-pal {padding-right:10px !important;}
+.r-ptl, .r-pvl, .r-pal {padding-top: 10px !important;}
+.r-pbl, .r-pvl, .r-pal {padding-bottom: 10px !important;}
+
+
+.rmargin, .r-margin {margin:10px 10px;}
+
+@media screen and (min-width:768px) {
+    h1, h2, h3, h4, h5, h6, ul, ol, dl, p,blockquote, .media {margin:10px 20px;}
+    dt, dd { margin: 0 20px; }
+    .rmargin, .r-margin {margin:10px 20px;}
+
+    .r-mlm, .r-mhm, .r-mam {margin-left:10px !important;}
+    .r-mrm, .r-mhm, .r-mam {margin-right:10px !important;}
+    .r-mtm, .r-mvm, .r-mam {margin-top:10px !important;}
+    .r-mbm, .r-mvm, .r-mam {margin-bottom:10px !important;}
+    .r-mll, .r-mhl, .r-mal {margin-left:20px !important;}
+    .r-mrl, .r-mhl, .r-mal {margin-right:20px !important;}
+    .r-mtl, .r-mvl, .r-mal {margin-top:20px !important;}
+    .r-mbl, .r-mvl, .r-mal {margin-bottom:20px !important;}
+    .r-plm, .r-phm, .r-pam {padding-left:10px !important;}
+    .r-prm, .r-phm, .r-pam {padding-right:10px !important;}
+    .r-ptm, .r-pvm, .r-pam {padding-top:10px !important;}
+    .r-pbm, .r-pvm, .r-pam {padding-bottom:10px !important;}
+    .r-pll, .r-phl, .r-pal {padding-left:20px !important;}
+    .r-prl, .r-phl, .r-pal {padding-right:20px !important;}
+    .r-ptl, .r-pvl, .r-pal {padding-top:20px !important;}
+    .r-pbl, .r-pvl, .r-pal {padding-bottom:20px !important;}
+}

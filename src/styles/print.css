@@ -1,0 +1,70 @@
+@import url("finn.css");
+@import url("core/reset/reset-min.css");
+@import url("core/reset/html5-reset.css");
+@import url("core/template/template.css");
+/*@import url("core/grid/grids.css");*/
+@import url("core/lists/lists.css");
+@import url("core/module/mod.css");
+@import url("core/module/mod_skins.css");
+@import url("core/media/media.css");
+@import url("core/spacing/space.css");
+@import url("core/table/table.css");
+@import url("core/color/color.css");
+@import url("core/fonts/fonts.css");
+@import url("core/form/form.css");
+@import url("core/form/form_bs.css");
+@import url("core/content.css");
+@import url("core/base.css");
+
+body, .page { background: #fff!important; }
+img { max-width: 100%; }
+.noprint,
+.invisible,
+.toggle-grid,
+.feedbackHint,
+.advertbuttons, .user-object-toolbar,
+.broadcast,
+hr,
+.button,
+button,
+#topbanner,
+#skyskraper,
+.banners,
+.webads,
+.webad,
+.heliosPosition,
+.advertisement,
+#sentinel,
+.feedbackHint,
+.feedbackContainer,
+.feedbackWrapper,
+.fb-like,
+#moreimages,
+.mupf-menu {
+    display: none!important;
+}
+
+.print-only {
+    display: block!important;
+}
+
+.line, .lastUnit { overflow: visible !important; }
+.line:after, .lastUnit:after { clear: both; }
+
+/* Header */
+.logo,
+.our-logo { height:0; width:0; }
+#brandingmarket h2:before { content: url("/img/logo_finn_shadow.png"); margin-right: 5px; float: left; }
+#brandingmarket h2 a { display: inline-block; float: left; height: 37px; line-height: 37px; }
+
+/* Unhacks */
+ul.bullets li:before, .object-description ul li:before { display: none; }
+ul.bullets li, .object-description ul li { list-style: square outside!important; position: static; }
+
+/* Motor specifics */
+.object .objectinfo { clear: both; }
+
+/* Etc */
+.mod.shadow > .inner { box-shadow: none; }
+#ad-edited-info { position: absolute; right: 0; top: 20px; }
+.contact address { box-shadow: none!important; }

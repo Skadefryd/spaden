@@ -1,0 +1,645 @@
+/* **************** FORM OBJECTS ***************** */
+
+/* ====== Elements ====== */
+/* Form elements */
+/* FINN input types */
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="phone"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    display: inline-block;
+    overflow:visible;
+    color:#333;
+    padding: 4px 6px;
+    border: 1px solid;
+    background-color:#ffffff;
+    border-color: #999;
+    border-radius:4px;
+    font-size: 12px;
+}
+input:disabled[type="text"],
+input:disabled[type="password"],
+input:disabled[type="url"],
+input:disabled[type="phone"],
+input:disabled[type="tel"],
+input:disabled[type="search"],
+input:disabled[type="email"],
+input:disabled[type="date"],
+input:disabled[type="number"],
+select:disabled,
+textarea:disabled{
+    color:#999;
+    background-color:#eee;
+    border-color: #ccc;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+
+}
+
+input[type=checkbox],
+input[type=radio] {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 3px 0;
+    *margin-top: 0;
+    /* IE6-7 */
+
+    /*line-height: normal;*/
+    /*border: none;*/
+}
+input[type=file] {
+    background-color: #ffffff;
+    padding: initial;
+    border: initial;
+    line-height: initial;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+select, input[type=file] {
+    height: 25px;
+    *height: auto;
+    *margin-top: 4px;
+    /* IE7:  add top margin to align select with labels */
+}
+select[multiple] {
+    height: inherit;
+    background-color: #ffffff;
+}
+
+/* File input with button overlaid from m.skeleton */
+a.file-input-button {
+    position: relative;
+    overflow: hidden;
+    display: inline;
+}
+
+a.file-input-button input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* eksperimentel søkeicon i søkefelt :sn */
+input[type="search"]{
+    background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMTkuNSAxMTkuNSA2MiA2MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxOS41IDExOS41IDYyIDYyIj48cGF0aCBkPSJNNjUuNzk5IDE0Ni4wODNjMC0xMC44MjMtOC43NzctMTkuNjAxLTE5LjYxNS0xOS42MDEtMTAuODMgMC0xOS42MTQgOC43NzctMTkuNjE0IDE5LjYwMSAwIDEwLjgzOSA4Ljc4NCAxOS42MTYgMTkuNjE0IDE5LjYxNiAxMC44MzcgMCAxOS42MTUtOC43NzcgMTkuNjE1LTE5LjYxNnoiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjOWJhOGIxIiBkPSJNODAuOTgyIDE3NS44MThsLTEzLjkyLTEzLjkyNGMzLjMzNi00LjM5MyA1LjMxNi05Ljg2NyA1LjMxNi0xNS44MTIgMC0xNC40NTctMTEuNzI1LTI2LjE3Ny0yNi4xOTUtMjYuMTc3LTE0LjQ1NyAwLTI2LjE4NCAxMS43Mi0yNi4xODQgMjYuMTc3IDAgMTQuNDcyIDExLjcyNyAyNi4xOTYgMjYuMTg0IDI2LjE5NiA1LjkyOSAwIDExLjQwOC0xLjk4MyAxNS43OTQtNS4zMDdsMTMuOTI0IDEzLjkyMiA1LjA4MS01LjA3NXptLTU0LjQxMi0yOS43MzVjMC0xMC44MjMgOC43ODQtMTkuNjAxIDE5LjYxNC0xOS42MDEgMTAuODM1IDAgMTkuNjE1IDguNzc3IDE5LjYxNSAxOS42MDEgMCAxMC44MzktOC43NzcgMTkuNjE2LTE5LjYxNSAxOS42MTYtMTAuODMgMC0xOS42MTQtOC43NzctMTkuNjE0LTE5LjYxNnoiLz48L3N2Zz4=);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 2s;
+    transition: all 0.2s;
+    fill: #94d31b;
+}
+
+input[type="search"]:focus {
+    background-position: -20px center;
+    text-indent: 0;
+}
+
+/* FINN Button types  */
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+button,
+a.icon,
+a.button{
+	display: inline-block;
+	overflow:visible;
+	cursor: pointer;
+	border: 1px solid;
+	border-color: #0064a5;
+	border-radius:4px;
+	padding: 4px 15px;
+	*padding: 1px 5px 2px 5px; /*ie6sux padding fix*/
+	color:#FFFFFF;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	background-color: #0183DA;
+	background-image: -moz-linear-gradient(center bottom , #0183DA, #0099ff);
+	background-image: -webkit-linear-gradient(bottom, #0183DA, #0099ff);
+	background-image: -o-linear-gradient(bottom, #0183DA, #0099ff);
+	background-image: linear-gradient(bottom, #0183DA, #0099ff);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 2.25em;
+}
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border:0; padding: 0;
+}
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+button:hover,
+a.icon:hover,
+a.button:hover{
+	background-color: #0474bf;
+    background-image: -moz-linear-gradient(center bottom , #0474bf, #018ae5);
+	background-image: -webkit-linear-gradient(bottom, #0474bf, #018ae5);
+	background-image: -o-linear-gradient(bottom, #0474bf, #018ae5);
+	background-image: linear-gradient(bottom, #0474bf, #018ae5);
+}
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active,
+button:active,
+a.icon:active,
+a.button:active{
+	box-shadow: inset 0 2px 2px rgba(0,0,0,.3);
+}
+
+input.order,
+button.order,
+a.icon.order,
+a.button.order{
+    background-color:#eb5f00;
+    border: solid 1px #963c00;
+    background-image: -moz-linear-gradient(bottom, #eb5f00, #ff6600);
+    background-image: -webkit-linear-gradient(bottom, #eb5f00, #ff6600);
+    background-image: -o-linear-gradient(bottom, #eb5f00, #ff6600);
+    background-image: linear-gradient(bottom, #eb5f00, #ff6600);
+}
+input.order:hover,
+button.order:hover,
+a.icon.order:hover,
+a.button.order:hover{
+    background-color:#c85000;
+    background-image: -moz-linear-gradient(bottom, #c85000, #eb5f00);
+    background-image: -webkit-linear-gradient(bottom, #c85000, #eb5f00);
+    background-image: -o-linear-gradient(bottom, #c85000, #eb5f00);
+    background-image: linear-gradient(bottom, #c85000, #eb5f00);
+}
+input.secondary,
+button.secondary,
+a.icon.secondary,
+a.button.secondary{
+     color:#333;
+     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+     border: 1px solid #b2b2b2;
+     background-color: #d7d7d7;
+     background-image: -moz-linear-gradient(bottom, #d7d7d7, #eee);
+     background-image: -webkit-linear-gradient(bottom, #d7d7d7, #eee);
+     background-image: -o-linear-gradient(bottom, #d7d7d7, #eee);
+     background-image: linear-gradient(bottom, #d7d7d7, #eee);
+ }
+input.secondary:hover,
+button.secondary:hover,
+a.icon.secondary:hover,
+a.button.secondary:hover{
+    background-color: #d1cfcf;
+    background-image: -moz-linear-gradient(bottom, #d1cfcf, #e1e0e0);
+    background-image: -webkit-linear-gradient(bottom, #d1cfcf, #e1e0e0);
+    background-image: -o-linear-gradient(bottom, #d1cfcf, #e1e0e0);
+    background-image: linear-gradient(bottom, #d1cfcf, #e1e0e0);
+}
+
+input.yellowsnow,
+button.yellowsnow,
+a.icon.yellowsnow,
+a.button.yellowsnow{
+    color:#5a4600;
+    text-shadow: 0 1px 0 #fff;
+    border: 1px solid #ffcb38;
+    background-color: #ffff99;
+    background-image: -moz-linear-gradient(bottom, #ffff99, #fafac8);
+    background-image: -webkit-linear-gradient(bottom, #ffff99, #fafac8);
+    background-image: -o-linear-gradient(bottom, #ffff99, #fafac8);
+    background-image: linear-gradient(bottom, #ffff99, #fafac8);
+}
+input.yellowsnow:hover,
+button.yellowsnow:hover,
+a.icon.yellowsnow:hover,
+a.button.yellowsnow:hover{
+    background-color: #fff55a;
+    background-image: -moz-linear-gradient(bottom, #fff55a, #ffff99);
+    background-image: -webkit-linear-gradient(bottom, #fff55a, #ffff99);
+    background-image: -o-linear-gradient(bottom, #fff55a, #ffff99);
+    background-image: linear-gradient(bottom, #fff55a, #ffff99);
+}
+input.utility,
+button.utility,
+a.icon.utility,
+a.button.utility{
+    border: 1px solid #333;
+    background-color: #666;
+    background-image: -moz-linear-gradient(bottom, #666, #777);
+    background-image: -webkit-linear-gradient(bottom, #666, #777);
+    background-image: -o-linear-gradient(bottom, #666, #777);
+    background-image: linear-gradient(bottom, #666, #777);
+}
+input.utility:hover,
+button.utility:hover,
+a.icon.utility:hover,
+a.button.utility:hover{
+    background-color: #555;
+    background-image: -moz-linear-gradient(bottom, #555, #666);
+    background-image: -webkit-linear-gradient(bottom, #555, #666);
+    background-image: -o-linear-gradient(bottom, #555, #666);
+    background-image: linear-gradient(bottom, #555, #666);
+}
+input.danger,
+button.danger,
+a.icon.danger,
+a.button.danger{
+    color:#FFFFFF;
+    border: 1px solid rgb(183,38,38);
+    background-color: rgb(229,124,124);
+    background-image: -moz-linear-gradient(bottom, rgb(183,38,38), rgb(229,124,124));
+    background-image: -webkit-linear-gradient(bottom, rgb(183,38,38), rgb(229,124,124));
+    background-image: -o-linear-gradient(bottom, rgb(183,38,38), rgb(229,124,124));
+    background-image: linear-gradient(bottom, rgb(183,38,38), rgb(229,124,124));
+}
+input.danger:hover,
+button.danger:hover,
+a.icon.danger:hover,
+a.button.danger:hover{
+    background-color: rgb(109,109,109);
+    background-image: -moz-linear-gradient(bottom, rgb(153,32,32), rgb(211,113,113));
+    background-image: -webkit-linear-gradient(bottom, rgb(153,32,32), rgb(211,113,113));
+    background-image: -o-linear-gradient(bottom, rgb(153,32,32), rgb(211,113,113));
+    background-image: linear-gradient(bottom, rgb(153,32,32), rgb(211,113,113));
+}
+
+input:disabled[type=button],
+input:disabled[type=submit],
+input:disabled[type=reset],
+button:disabled,
+input:disabled[type=button]:hover,
+input:disabled[type=submit]:hover,
+input:disabled[type=reset]:hover,
+button:disabled:hover {
+    color: #999;
+    text-shadow: #fff -1px 0 0;
+    background-color: #eee;
+    border-color: #ccc;
+	background-image:none;
+}
+
+.inprogress {
+    background-size: 30px 30px;
+    background-image: -webkit-linear-gradient(135deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+    transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+    transparent 75%, transparent)!important;
+    background-image: -moz-linear-gradient(135deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+    transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+    transparent 75%, transparent)!important;
+    background-image: -ms-linear-gradient(135deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+    transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+    transparent 75%, transparent)!important;
+    background-image: -o-linear-gradient(135deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+    transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+    transparent 75%, transparent)!important;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+    transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+    transparent 75%, transparent)!important;
+
+    -webkit-animation: animate-inprogress 3s linear infinite;
+    -o-animation: animate-inprogress 3s linear infinite;
+    -ms-animation: animate-inprogress 3s linear infinite;
+    animation: animate-inprogress 3s linear infinite;
+}
+
+@-webkit-keyframes animate-inprogress { 0% {background-position: 0 0;} 100% {background-position: 60px 0;} }
+@-moz-keyframes animate-inprogress { 0% {background-position: 0 0;} 100% {background-position: 60px 0;} }
+@-o-keyframes animate-inprogress { 0% {background-position: 0 0;} 100% {background-position: 60px 0;} }
+@-ms-keyframes animate-inprogress { 0% {background-position: 0 0;} 100% {background-position: 60px 0;} }
+@keyframes animate-inprogress { 0% {background-position: 0 0;} 100% {background-position: 60px 0;} }
+
+
+/* FF button padding fix */
+/*@-moz-document url-prefix(){ input[type=button],input[type=submit],input[type=reset]{ padding: 2px 3px; } }     Introduserte bugs på ff istedenfor å fikse dem (?) */
+
+/* FINN Button sizes */
+input.large,
+button.large,
+a.button.large {
+    font-size: 16px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+/* Beholder overstyring av vertikal padding p� knapper inntil videre */
+input[type=button].large,
+button.large,
+a.button.large {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+input.small,
+button.small,
+a.button.small {
+    font-size: 0.85em;
+}
+input[type=button].small,
+button.small,
+a.button.small{
+    padding: 2px 10px;
+}
+
+
+input.icon,
+button.icon,
+a.icon {
+    font-size:11px;
+    border-radius: 2px;
+    font-weight: normal;
+    line-height: 11px;
+    padding: 0 2px;
+}
+a.icon:hover,
+.icon a:hover,
+a.button:hover,
+a.button:active,
+a.button:focus {
+    text-decoration: none;
+}
+
+/* Input behavior */
+input, textarea {
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input:focus, textarea:focus, select:focus {
+    outline: 0;
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+input[type=file]:focus,
+input[type=checkbox]:focus,
+select:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 1px dotted #666;
+}
+/* Input field status behaviour */
+
+/* .invalid  */
+
+.invalid .help-block,
+.invalid .help-inline{
+    color:#c00;
+}
+.invalid input,
+.invalid textarea,
+.invalid select{
+    border-color:#c00;
+}
+.invalid input:focus,
+.invalid textarea{
+    border-color: #e9322d;
+    -webkit-box-shadow: 0 0 6px #f8b9b7;
+    box-shadow: 0 0 6px #f8b9b7;
+}
+
+form .error .help-block,
+form .error .help-inline,
+form span.error{
+    color: #c00;
+}
+form .error input,
+form .error textarea,
+form input.error,
+form textarea.error {
+    border-color: #c00;
+}
+form .error input:focus,
+form .error textarea:focus,
+form input.error:focus,
+form textarea.error:focus {
+    border-color: #e9322d;
+    -webkit-box-shadow: 0 0 6px #f8b9b7;
+    box-shadow: 0 0 6px #f8b9b7;
+}
+form .error .input-prepend .add-on,
+form .error .input-append .add-on {
+    color: #b94a48;
+    border-color: #b94a48;
+}
+form .warning .help-block,
+form .warning .help-inline {
+    color: #c09853;
+}
+form .warning input,
+form .warning textarea {
+    border-color: #ccae64;
+}
+form .warning input:focus,
+form .warning textarea:focus {
+    border-color: #be9a3f;
+    -webkit-box-shadow: 0 0 6px #e5d6b1;
+    box-shadow: 0 0 6px #e5d6b1;
+}
+/*
+form .success .help-block,
+form .success .help-inline {
+    color: #468847;
+}
+form .success input,
+form .success textarea {
+    xcolor: #468847;
+    border-color: #57a957;
+}
+form .success input:focus,
+form .success textarea:focus {
+    border-color: #458845;
+    -webkit-box-shadow: 0 0 6px #9acc9a;
+    box-shadow: 0 0 6px #9acc9a;
+}
+*/
+/* legend */
+legend{font-weight:bold}
+legend.disabled, label.disabled{color:#999999}
+
+/* labels */
+label{
+    color:#333;
+}
+label:hover{
+    color:black;
+}
+label.inline {
+    display: inline-block;
+    width: auto;
+    float: none;
+}
+
+/* Placeholders */
+::-webkit-input-placeholder { color: #999; }
+:-moz-placeholder { color: #999!important; }
+
+
+/* Required marks */
+.required:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 1em;
+    line-height: 1em;
+    background: url("/img/required.png") no-repeat 4px center;
+    color: #3385ff;
+    margin-right: -15px;
+}
+
+.required.invalid:after,.invalid .required:after {
+    background-position: -26px center;
+}
+.required.validated:after,.valid .required:after {
+    background-position: -11px center;
+}
+
+.required.inline:after {
+    margin-right: 0;
+}
+
+/* Input sizes */
+
+.span1{ width:30px; }
+.span2{ width:115px; }
+.span3{ width:195px; }
+.span4{ width:280px; }
+.span5{ width:360px; }
+.span6{ width:445px; }
+.span7{ width:525px; }
+.span8{ width:610px; }
+.span9{ width:690px; }
+.span10{ width:775px; }
+.span11{ width:855px; }
+.span12{ width:940px; }
+
+input.span1, textarea.span1 { width: 30px; }
+input.span2, textarea.span2 { width: 101px; }
+input.span3, textarea.span3 { width: 181px; }
+input.span4, textarea.span4 { width: 266px; }
+input.span5, textarea.span5 { width: 346px; }
+input.span6, textarea.span6 { width: 431px; }
+input.span7, textarea.span7 { width: 511px; }
+input.span8, textarea.span8 { width: 596px; }
+input.span9, textarea.span9 { width: 676px; }
+input.span10, textarea.span10 {	width: 761px; }
+input.span11, textarea.span11 { width: 841px; }
+input.span12, textarea.span12 {	width: 926px; }
+
+input.fullwidth,
+button.fullwidth,
+a.button.fullwidth,
+input.fullwidth,
+select.fullwidth,
+textarea.fullwidth {
+    text-align: center;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button.fullwidth,
+a.button.fullwidth {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+/* */
+.input-ff-mini,
+input.ff-mini,
+textarea.ff-mini,
+select.ff-mini {
+    width: 60px;
+}
+.input-ff-small,
+input.ff-small,
+textarea.ff-small,
+select.ff-small {
+    width: 90px;
+}
+.input-ff-medium,
+input.ff-medium,
+textarea.ff-medium,
+select.ff-medium {
+    width: 150px;
+}
+.input-ff-large,
+input.ff-large,
+textarea.ff-large,
+select.ff-large {
+    width: 210px;
+}
+.input-ff-xlarge,
+input.ff-xlarge,
+textarea.ff-xlarge,
+select.ff-xlarge {
+    width: 270px;
+}
+.input-ff-xxlarge,
+input.ff-xxlarge,
+textarea.ff-xxlarge,
+select.ff-xxlarge {
+    width: 530px;
+}
+textarea.ff-xxlarge {
+    overflow-y: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="phone"],
+input[type="tel"],
+input[type="search"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select,
+textarea,
+input[type=button],
+input[type=submit],
+input[type=reset],
+button,
+a.icon,
+a.button{
+    line-height: 1.25em
+}
+.s-touch input[type="text"],
+.s-touch input[type="password"],
+.s-touch input[type="url"],
+.s-touch input[type="phone"],
+.s-touch input[type="tel"],
+.s-touch input[type="search"],
+.s-touch input[type="email"],
+.s-touch input[type="date"],
+.s-touch input[type="number"],
+.s-touch select,
+.s-touch textarea,
+.s-touch input[type=button],
+.s-touch input[type=submit],
+.s-touch input[type=reset],
+.s-touch button,
+.s-touch a.icon,
+.s-touch a.button{
+    line-height: 2.25em;
+    min-height: 2.25em;
+}

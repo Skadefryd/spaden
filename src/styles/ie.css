@@ -1,0 +1,185 @@
+/* */
+.page { width: 990px; }
+.page.fullsize{ width:100%; } /* Fix for jobb, på cv vinner 990px og ting havner i overflow  */
+.ribbon:after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+.ribbon.newToday:before,
+.ribbon.newToday:hover:before,
+.ribbon.expiresToday:before,
+.ribbon.expiresToday:hover:before,
+.ribbon.sold:before,
+.ribbon.sold:hover:before,
+.ribbon.rented:before,
+.ribbon.rented:hover:before,
+.ribbon.bought:before,
+.ribbon.bought:hover:before,
+.ribbon.filled:before,
+.ribbon.filled:hover:before,
+.ribbon.givenaway:before,
+.ribbon.givenaway:hover:before,
+.ribbon.active:before,
+.ribbon.active:hover:before,
+.ribbon.control:before,
+.ribbon.control:hover:before,
+.ribbon.expired:before,
+.ribbon.expired:hover:before,
+.ribbon.inactive:before,
+.ribbon.inactive:hover:before,
+.ribbon.rejected:before,
+.ribbon.rejected:hover:before,
+.ribbon.started:before,
+.ribbon.started:hover:before,
+.ribbon.deleted:before,
+.ribbon.deleted:hover:before,
+.ribbon.newprice:before,
+.ribbon.newprice:hover:before,
+.ribbon.fulfilled:before,
+.ribbon.fulfilled:hover:before{
+    display: none;
+}
+
+.ribbon.newToday:after { content: url("/img/ribbons/ribbon-new.png"); }
+.ribbon.newToday { *background: url("/img/ribbons/ribbon-new.png") no-repeat top right; }
+.ribbon.expiresToday:after { content: url("/img/ribbons/ribbon-expires.png"); }
+.ribbon.expiresToday { *background: url("/img/ribbons/ribbon-expires.png") no-repeat top right; }
+.ribbon.sold:after { content: url("/img/ribbons/ribbon-sold.png"); }
+.ribbon.sold { *background: url("/img/ribbons/ribbon-sold.png") no-repeat top right; }
+.ribbon.rented:after { content: url("/img/ribbons/ribbon-rented.png"); }
+.ribbon.rented { *background: url("/img/ribbons/ribbon-rented.png") no-repeat top right; }
+.ribbon.bought:after { content: url("/img/ribbons/ribbon-bought.png"); }
+.ribbon.bought { *background: url("/img/ribbons/ribbon-bought.png") no-repeat top right; }
+.ribbon.filled:after { content: url("/img/ribbons/ribbon-filled.png"); }
+.ribbon.filled { *background: url("/img/ribbons/ribbon-filled.png") no-repeat top right; }
+.ribbon.givenaway:after { content: url("/img/ribbons/ribbon-givenaway.png"); }
+.ribbon.givenaway { *background: url("/img/ribbons/ribbon-givenaway.png") no-repeat top right; }
+.ribbon.active:after { content: url("/img/ribbons/ribbon-active.png"); }
+.ribbon.active { *background: url("/img/ribbons/ribbon-active.png") no-repeat top right; }
+.ribbon.newprice:after { content: url("/img/ribbons/ribbon-newprice.png"); }
+.ribbon.newprice { *background: url("/img/ribbons/ribbon-newprice.png") no-repeat top right; }
+.ribbon.control:after { content: url("/img/ribbons/ribbon-control.png"); }
+.ribbon.control { *background: url("/img/ribbons/ribbon-control.png") no-repeat top right; }
+.ribbon.expired:after { content: url("/img/ribbons/ribbon-expired.png"); }
+.ribbon.expired { *background: url("/img/ribbons/ribbon-expired.png") no-repeat top right; }
+.ribbon.inactive:after { content: url("/img/ribbons/ribbon-inactive.png"); }
+.ribbon.inactive { *background: url("/img/ribbons/ribbon-inactive.png") no-repeat top right; }
+.ribbon.rejected:after { content: url("/img/ribbons/ribbon-rejected.png"); }
+.ribbon.rejected { *background: url("/img/ribbons/ribbon-rejected.png") no-repeat top right; }
+.ribbon.started:after { content: url("/img/ribbons/ribbon-started.png"); }
+.ribbon.started { *background: url("/img/ribbons/ribbon-started.png") no-repeat top right; }
+.ribbon.deleted:after { content: url("/img/ribbons/ribbon-deleted.png"); }
+.ribbon.deleted { *background: url("/img/ribbons/ribbon-deleted.png") no-repeat top right; }
+.ribbon.fulfilled:after { content: url("/img/ribbons/ribbon-fulfilled.png"); }
+.ribbon.fulfilled { *background: url("/img/ribbons/ribbon-fulfilled.png") no-repeat top right; }
+
+.ribbon2 .ribbon-content {
+    display: inline-block; right: 0; top: 0; width: auto; padding: 2px 4px;
+}
+
+.modal-background { background: url("/img/semitransparent.png") repeat; }
+.modal-box iframe { max-width: none; }
+
+.inprogress { background: url("/img/animatedstripes.gif") repeat; }
+
+.linkedInBox a.img { width: 52px; }
+
+.hideht768{display:none}
+.r-cols1to2 .unit { width: 50%; }
+.r-cols1to3 .unit,
+.r-cols2to3 .unit { width: 33.3333%; }
+.r-cols1to4 .unit,
+.r-cols2to4 .unit,
+.r-cols3to4 .unit { width: 25%; }
+.r-cols2to5 .unit { width: 20%; }
+.r-size1of1 {float:none;}
+.r-size1of2 {width:50%;}
+.r-size1of3 {width:33.33333%;}
+.r-size2of3 {width:66.66666%;}
+.r-size1of4 {width:25%;}
+.r-size3of4 {width:75%;}
+.r-size1of5 {width:20%;}
+.r-size2of5 {width:40%;}
+.r-size3of5 {width:60%;}
+.r-size4of5 {width:80%;}
+.r-size1of6 {width:16.6666666%;}
+.r-size5of6 {width:83.3333333%;}
+
+.r-cols1to2 > .unit:first-child + .unit + .unit { clear:both; }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit { clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+
+.r-cols2to4 > .unit:first-child + .unit + .unit + .unit + .unit,
+.r-cols3to4 > .unit:first-child + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols3to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols3to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+.r-cols2to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols3to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+
+.r-cols2to5 > .unit:first-child + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to5 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to5 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+
+.r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+
+
+.mod{margin:0 10px 10px 0 !important}
+.mod.shadow > .inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo,
+.our-logo { height: 70px; width: 111px; background-image: url(/img/sprite_wwwFINN_07.png); }
+.siteheader .mod.shadow .inner { box-shadow: none; background: transparent; padding: 0; }
+.homelink { width: 325px; float: left }
+.header-bd { height: 80px; }
+.mupf-container { float: right; }
+
+.subpage-decoration { position: absolute; }
+.bap .subpage-decoration { background: url(/img/decoration/decoration_subpages_bap.png) no-repeat center top; height: 42px; top: -34px; width: 348px; left: 50%; margin-left: -174px; }
+.job .subpage-decoration { background: url(/img/decoration/decoration_subpages_job.png) no-repeat center top; height: 46px; top: -35px; width: 243px; left: 50%; margin-left: -121px; }
+.motor .subpage-decoration,
+.car .subpage-decoration { background: url(/img/decoration/decoration_subpages_car.png) no-repeat center top; height: 48px; top: -29px; width: 350px; left: 50%; margin-left: -175px; }
+.boat .subpage-decoration { background: url(/img/decoration/decoration_subpages_boat.png) no-repeat center top; height: 45px; top: -33px; width: 365px; left: 50%; margin-left: -182px; }
+.mc .subpage-decoration { background: url(/img/decoration/decoration_subpages_mc.png) no-repeat center top; height: 50px; top: -40px; width: 304px; left: 50%; margin-left: -152px; }
+.realestate .subpage-decoration { background: url(/img/decoration/decoration_subpages_realestate.png) no-repeat center top; height: 55px; top: -41px; width: 348px; left: 50%; margin-left: -174px; }
+.travel .subpage-decoration { background: url(/img/decoration/decoration_subpages_travel.png) no-repeat center top; height: 54px; top: -45px; width: 360px; left: 50%; margin-left: -180px; }
+
+.browse-decoration { position: absolute; }
+.bap .browse-decoration { background: url(/img/decoration/decoration_browse_bap.png) no-repeat center top; height: 61px; top: -50px; width: 549px; left: 97px; }
+.b2b .browse-decoration { background: url(/img/decoration/decoration_browse_b2b.png) no-repeat center top; height: 60px; top: -47px; width: 501px; left: 144px; }
+.motor .browse-decoration,
+.car .browse-decoration { background: url(/img/decoration/decoration_browse_car.png) no-repeat center top; height: 55px; top: -37px; width: 512px; left: 130px; }
+.boat .browse-decoration { background: url(/img/decoration/decoration_browse_boat.png) no-repeat center top; height: 59px; top: -44px; width: 473px; left: 142px; }
+.mc .browse-decoration { background: url(/img/decoration/decoration_browse_mc.png) no-repeat center top; height: 73px; top: -59px; width: 500px; left: 122px; }
+.job .browse-decoration { background: url(/img/decoration/decoration_browse_job.png) no-repeat center top; height: 58px; top: -47px; width: 418px; left: 234px; }
+.realestate .browse-decoration { background: url(/img/decoration/decoration_browse_realestate.png) no-repeat center top; height: 65px; top: -49px; width: 530px; left: 97px; }
+.travel .browse-decoration { background: url(/img/decoration/decoration_browse_travel.png) no-repeat center top; height: 82px; top: -71px; width: 455px; left: 126px; }
+.oppdrag .browse-decoration { background: url(/img/decoration/decoration_browse_oppdrag.png) no-repeat center top; height: 66px; top: -55px; width: 393px; left: 195px; }
+.mainfrontpage2 .browse-decoration { background: url(/img/decoration/decoration_frontpage.png) no-repeat center top; height: 57px; top: -43px; width: 840px; left: 94px; }

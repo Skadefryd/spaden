@@ -1,0 +1,49 @@
+.popover-container {
+    position: absolute;
+    display: inline-block;
+}
+
+.popover-content {
+    position: absolute;
+    top: 2.5em;
+    min-width: 150px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.3);
+    z-index: 777;
+}
+.popover-content:before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    position: absolute;
+    top: -7px;
+    left: 14px;
+    -ms-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+    z-index: 778;
+}
+
+.popover-content.bg-lt-gray:before { background-color: #eee; }
+.popover-content.bg-black:before { background-color: #000; }
+.popover-content.bg-dk-gray:before { background-color: #666; }
+.popover-content.bg-lt-gray:before { background-color: #eee; }
+.popover-content.bg-pale-gray:before { background-color: #f5f5f5; }
+.popover-content.bg-white:before { background-color: #fff; }
+.popover-content.bg-dkdk-blue:before { background-color: #000066; }
+.popover-content.bg-dk-blue:before { background-color: #0099ff; }
+.popover-content.bg-blue:before { background-color: #a2d2ee; }
+.popover-content.bg-lt-blue:before { background-color: #ddeeff; }
+.popover-content.bg-pale-blue:before { background-color: #f1f8ff; }
+.popover-content.bg-contrast:before { background-color: #444; }
+.popover-content.bg-firm:before { background-color: #ff6600; }
+.popover-content.bg-positive:before { background-color: #669933; }
+.popover-content.bg-negative:before { background-color: #cc0000; }
+.popover-content.bg-snotgreen:before { background-color: #d2e286; }
+.popover-content.bg-pissyellow:before { background-color: #ffff99; }

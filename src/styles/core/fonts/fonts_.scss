@@ -1,0 +1,78 @@
+@import '../color/colors';
+
+body{font:13px/1.3em arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;line-height:1.5em;color:$sharp}
+html {font-size: 100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;}
+table{font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+code{color:#0B8C8F;}
+
+
+/* ====== Headings ====== */
+/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
+h1,.h1{font-size:30px;font-style:normal;line-height: 1.25em;}
+h2,.h2{font-size:18px;font-style:normal;line-height: 1.25em;}
+h3,.h3,h4,.h4{font-size:14px;font-weight:bold;font-style:normal;line-height: 1.25em;}
+/* if additional headings are needed they should be created via additional classes, never via location dependant styling */
+
+/* Fix for webscript subscript + superscript alignment bug */
+sup,sub{line-height:1em;}
+
+em,.em{font-style: italic;}
+strong,.strong{font-weight:bold;}
+.normal{font-weight: normal;}
+/*.object header h1 { font-size: 26px; font-weight: normal; line-height: 34px; }     */
+.slightlylargerlargetext{ font-size: 24px;}
+.largetext { font-size: 16px; }
+.smalltext { font-size: 11px; }
+.justify { text-align: justify; }
+.strikethrough { text-decoration: line-through; }
+.capitalize:first-letter { text-transform: capitalize; }
+
+
+/* Forsida, inntil videre */
+@media screen and (max-width:900px) {
+    .frontpage-verticals h2 { font-size: 16px; }
+}
+@media screen and (max-width:460px) {
+    .frontpage-verticals h2 { font-size: 13px; }
+}
+
+/* default links */
+a, a:link { color:$blueyea; text-decoration:none; }
+a:visited { color:$blueyea; text-decoration:none; }
+a:hover, a:focus, a:active { text-decoration:underline; }
+
+a.neutral { color: #666!important; }
+a > .neutral:hover,
+a:hover > .neutral { text-decoration: underline; }
+
+/* navigational links, visited on */
+a.userhistory:visited, .userhistory a:visited { color:#666; }
+a.userhistory:visited:hover, .userhistory a:visited:hover { color:#3366ff; }
+
+/* high contrast font color scheme */
+a.contrast:link,.contrast a:link { color:#eee; }
+a.contrast:visited,.contrast a:visited { color:#ddd; }
+a.contrast:focus,.contrast a:hover { color:#fff; }
+a.contrast:focus,.contrast a:focus,
+a.contrast:active,.contrast a:active { background:transparent; }
+
+/* navigational links, visited on */
+a.contrast.userhistory:link,.contrast.userhistory a:link { color:#eee; }
+a.contrast.userhistory:visited,.contrast.userhistory a:visited { color:#eee; }
+a.contrast.userhistory:focus,.contrast.userhistory a:hover { color:#fff; }
+
+/* dark links */
+a.dark-links,a.dark-links:link,.dark-links a,.dark-links a:link{color:#04253c;}
+a.dark-links:visited,.dark-links a:visited{color:#04253c;}
+a.dark-links:hover,.dark-links a:hover,a.dark-links:focus,.dark-links a:focus,a.dark-links:active,.dark-links a:active{ text-decoration: underline; }
+
+/* block the link styling */
+a.linkblock:hover, .linkblock a:hover, a.linkblock:active, .linkblock a:active, a.linkblock:focus, .linkblock a:focus { text-decoration: none; }
+
+/* toolbar links */
+a.toolbar,a.toolbar:link,.toolbar a,.toolbar a:link{color:#666; text-decoration:none;}
+a.toolbar:visited,.toolbar a:visited{color:#666; text-decoration:none;}
+a.toolbar:hover,.toolbar a:hover,a.toolbar:focus,.toolbar a:focus{color:#333; text-decoration:none;}
+a.toolbar:active,.toolbar a:active{color:#333; text-decoration:none;}

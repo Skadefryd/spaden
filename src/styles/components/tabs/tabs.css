@@ -1,0 +1,40 @@
+/* experimental bootstrap tabs */
+.tabs{margin:0 0 20px;padding:0;list-style:none;zoom:1;}
+.tabs:before,.tabs:after{display:table;content:"";zoom:1;*display:inline;}
+.tabs:after{clear:both;}
+.tabs>li{float:left;}
+.tabs>li>a{display:block;}
+.tabs{float:left;width:100%;border-bottom:1px solid #ddd;}
+.tabs>li{position:relative;top:1px;}
+.tabs>li>a{padding:0 20px;margin-right:2px;line-height:30px;border:1px solid transparent;border-radius:4px 4px 0 0;background-color:#f5f5f5; border-color:#f5f5f5 #f5f5f5 #ddd;}
+.tabs.pills>li>a{border-radius:4px;}
+.tabs>li>a:hover{text-decoration:none;cursor:pointer;background-color:#eee; border-color:#eee #eee #ddd;}
+.tabs>li.active>a{color:#808080;background-color:#ffffff;border:1px solid #ddd;border-bottom-color:transparent;}
+.tabs .menu-dropdown,.tabs .dropdown-menu{top:35px;border-width:1px;border-radius:0 6px 6px 6px;}
+.tabs a.menu:after,.tabs .dropdown-toggle:after{border-top-color:#999;margin-top:15px;margin-left:5px;}
+.tabs li.open.menu .menu,.tabs .open.dropdown .dropdown-toggle{border-color:#999;}
+.tabs li.open a.menu:after,.tabs .dropdown.open .dropdown-toggle:after{border-top-color:#555;}
+.tab-content{clear:both;}
+.tab-content>*,.pill-content>*{display:none;}
+.tab-content>.active,.pill-content>.active{display:block;}
+
+
+/* extends bootstrap tabs, for tabs 'outside'  */
+.tabs.extern,.tabs.extern > li > a, .tabs.extern > li.active > a { border:0;}
+.tabs.extern > li { top:0; }
+.tabs.extern > li > a{line-height:29px;border-bottom:1px solid #ddd;}
+.tabs.extern > li > a:hover{}
+.tabs.extern > li.active > a{ background-color:#fff;border-bottom:1px solid white }
+.tabs.pills.extern > li.active > a{ background-color:#fff;border-bottom:1px solid #ddd }
+.mod .foldered{border-top-left-radius:0px;}
+
+/* 10px margin version */
+.tabs.extern.mediumm > li > a{ padding:0 10px}
+
+@media screen and (max-width:767px) {
+    .r-tabs { margin: 10px 0!important; float: none; }
+    .r-tabs:before { content: "Meny"; color: #22419b; cursor: pointer; display: block; line-height: 29px; border-bottom: 1px solid #ddd; padding: 0 10px; background-color:#f5f5f5; }
+    .r-tabs:hover li, .r-tabs:active li, .r-tabs:focus li, .r-tabs.r-tabs-open li { display: block; }
+    .r-tabs li { display:none; float: none; margin: 0!important; }
+    .r-tabs li a { padding: 0 10px; margin: 0; border-radius: 0!important; }
+}

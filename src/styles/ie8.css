@@ -1,0 +1,96 @@
+.page { width: 990px; }
+.page.fullsize{ width:100%; } /* Fix for jobb, på cv vinner 990px og ting havner i overflow  */
+
+.mod.broadcast .messages:before { display: none; }
+
+.ad-gallery .img { width: 145px; }
+
+.linkedInBox a.img { width: 52px; }
+
+.btn-gallery { filter: alpha(opacity=30); }
+.btn-gallery:hover { filter: alpha(opacity=60); }
+
+.popover-content:before {
+    width: 0!important;
+    height: 0!important;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    background: transparent!important;
+    top: -10px!important;
+}
+
+.popover-content.bg-black:before { border-color: transparent transparent #000 transparent; }
+.popover-content.bg-dk-gray:before { border-color: transparent transparent #666 transparent; }
+.popover-content.bg-lt-gray:before { border-color: transparent transparent #eee transparent; }
+.popover-content.bg-pale-gray:before { border-color: transparent transparent #f5f5f5 transparent; }
+.popover-content.bg-white:before { border-color: transparent transparent #fff transparent; }
+.popover-content.bg-dkdk-blue:before { border-color: transparent transparent #000066 transparent; }
+.popover-content.bg-dk-blue:before { border-color: transparent transparent #0099ff transparent; }
+.popover-content.bg-blue:before { border-color: transparent transparent #a2d2ee transparent; }
+.popover-content.bg-lt-blue:before { border-color: transparent transparent #ddeeff transparent; }
+.popover-content.bg-pale-blue:before { border-color: transparent transparent #f1f8ff transparent; }
+.popover-content.bg-contrast:before { border-color: transparent transparent #444 transparent; }
+.popover-content.bg-firm:before { border-color: transparent transparent #ff6600 transparent; }
+.popover-content.bg-positive:before { border-color: transparent transparent #669933 transparent; }
+.popover-content.bg-negative:before { border-color: transparent transparent #cc0000 transparent; }
+.popover-content.bg-snotgreen:before { border-color: transparent transparent #d2e286 transparent; }
+.popover-content.bg-pissyellow:before { border-color: transparent transparent #ffff99 transparent; }
+
+.hideht768{display:none}
+.r-cols1to2 .unit { width: 50%; }
+.r-cols1to3 .unit,
+.r-cols2to3 .unit { width: 33.3333%; }
+.r-cols1to4 .unit,
+.r-cols2to4 .unit,
+.r-cols3to4 .unit { width: 25%; }
+.r-cols2to5 .unit { width: 20%; }
+.r-size1of1 {float:none;}
+.r-size1of2 {width:50%;}
+.r-size1of3 {width:33.33333%;}
+.r-size2of3 {width:66.66666%;}
+.r-size1of4 {width:25%;}
+.r-size3of4 {width:75%;}
+.r-size1of5 {width:20%;}
+.r-size2of5 {width:40%;}
+.r-size3of5 {width:60%;}
+.r-size4of5 {width:80%;}
+.r-size1of6 {width:16.6666666%;}
+.r-size5of6 {width:83.3333333%;}
+
+.r-cols1to2 > .unit:first-child + .unit + .unit { clear:both; }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to2 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit { clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+.r-cols1to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols2to3 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+
+.r-cols2to4 > .unit:first-child + .unit + .unit + .unit + .unit,
+.r-cols3to4 > .unit:first-child + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols3to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols3to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+.r-cols2to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit,
+.r-cols3to4 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit{ clear:both }
+
+.r-cols2to5 > .unit:first-child + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to5 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to5 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+
+.r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+.r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }

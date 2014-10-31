@@ -1,0 +1,52 @@
+
+.finn-slider
+{
+    overflow: hidden; /* This significantly speeds up layout on mobile by avoiding layout of the whole document */
+    height: 58px;
+    width: 100%;
+    position: relative;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.finn-slider-track
+{
+    position: absolute;
+    height: 2px;
+    bottom: 13px;
+    width: 100%;
+    background: #09f;
+}
+
+.finn-slider-track-inner
+{
+    position: absolute;
+    height: 2px;
+    bottom: 13px;
+    background: #09f;
+}
+
+.finn-slider-thumb
+{
+    background-color: #FFFFFF;
+    border: 8px solid #09f;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    bottom: 0;
+    -ms-touch-action: none;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.finn-slider-output {
+    white-space: nowrap;
+
+    /* TODO: should not need to do this here, line-height should be specified with a
+       number instead of a length on body to avoid this. */
+    line-height: 1.5;
+    vertical-align: top;
+}
+

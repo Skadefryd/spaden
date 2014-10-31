@@ -1,0 +1,15 @@
+.notification{
+	height:18px;
+	min-width:18px;
+	line-height:18px;
+	font-size:11px; 
+	border-radius:18px;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+.notification.topright{
+	position:absolute;
+	top:4px;
+	right:4px;
+}

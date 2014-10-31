@@ -1,0 +1,85 @@
+/* Fra m.finn */
+.decoration {
+    background-image: url("/img/sprite_mFINN_14.png") !important;
+    background-repeat: no-repeat !important;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) { /* min-resolution: 2dppx */
+    .decoration {
+        background-image: url("/img/sprite_mFINN_14@2x.png") !important;
+        /* Translate the @2x sprite's dimensions back to 1x */
+        -webkit-background-size: 190px 330px !important;
+        background-size: 190px 330px !important;
+    }
+}
+
+/* HACK(davidh): there's no simple way to detect retina screens on Windows Phone,
+   so use this workaround to always send retina graphics to them. All other browsers
+   will ignore the whole rule since one of the selectors is unrecognized. No reason
+   why ::-ms-fill is used, it's just the shortest pseudo element. */
+/* This might no longer be needed, check if it can be removed */
+.decoration,
+.ie-selector-hack::-ms-fill {
+    background-image: url("/img/sprite_mFINN_14@2x.png") !important;
+    background-size: 190px 330px !important;
+}
+
+.decoration.icon-neste1 {
+    background-position: 0 -130px;
+    height: 20px;
+    width: 23px;
+}
+
+.decoration.largearrow {
+    background-position: 0 -55px;
+    height: 20px;
+    width: 83px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+
+.decoration.smallarrow {
+    background-position: 0 -80px;
+    height: 20px;
+    width: 52px;
+    background-origin: content-box;
+    background-clip: content-box;
+    display: block;
+}
+
+.decoration.our-logo {
+    background-position: 0 0;
+    height: 37px;
+    width: 72px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.decoration.curated {
+    background-position: -160px 0;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.decoration.target {
+    background-position: -135px -405px;
+    background-size: 250px auto !important;
+    width: 32px;
+    height: 30px;
+}
+
+.decoration.xout {
+    background-position: -104px -240px;
+    height: 15px;
+    width: 15px;
+    background-clip: content-box;
+    background-origin: content-box;
+}
+
+.decoration.arrowhead-right {
+    background-position: 0px -174px;
+    height: 20px;
+    width: 9px;
+}

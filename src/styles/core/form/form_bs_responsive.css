@@ -1,0 +1,10 @@
+@media screen and (max-width:640px) {
+    .span1{ width:16.6667; }
+    .span2{ width:33.3%; }
+    .span3{ width:50%; }
+
+    input.span1, textarea.span1 { width: 16.6667%; }
+    input.span2, textarea.span2 { width: 33.3%; }
+    input.span3, textarea.span3 { width: 50%; }
+}
+

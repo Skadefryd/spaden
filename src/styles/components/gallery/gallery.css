@@ -1,0 +1,160 @@
+.proportional-resize {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+/*
+How this works: the image needs a max-height to fit inside the viewport. max-height and max-width is set inline
+on the element, but max-height is overridden here up to 1800px (device-height) with an !important declaration.
+We scale off 40 extra pixels to accommodate for browser chrome.
+
+Why all this repetition instead of `calc(100vh - 40px)`? Because Chrome on Android (and possibly other browsers),
+when the page is scrolled and the browser chrome disappears, will recalculate `vh` which might lead to a jump.
+*/
+@media (max-device-height: 1800px) {
+    .gallery-image {
+        max-height: 1660px !important;
+    }
+}
+@media (max-device-height: 1700px) {
+    .gallery-image {
+        max-height: 1560px !important;
+    }
+}
+@media (max-device-height: 1600px) {
+    .gallery-image {
+        max-height: 1460px !important;
+    }
+}
+@media (max-device-height: 1500px) {
+    .gallery-image {
+        max-height: 1360px !important;
+    }
+}
+@media (max-device-height: 1400px) {
+    .gallery-image {
+        max-height: 1260px !important;
+    }
+}
+@media (max-device-height: 1300px) {
+    .gallery-image {
+        max-height: 1160px !important;
+    }
+}
+@media (max-device-height: 1200px) {
+    .gallery-image {
+        max-height: 1060px !important;
+    }
+}
+@media (max-device-height: 1100px) {
+    .gallery-image {
+        max-height: 960px !important;
+    }
+}
+@media (max-device-height: 1000px) {
+    .gallery-image {
+        max-height: 860px !important;
+    }
+}
+@media (max-device-height: 900px) {
+    .gallery-image {
+        max-height: 760px !important;
+    }
+}
+@media (max-device-height: 800px) {
+    .gallery-image {
+        max-height: 660px !important;
+    }
+}
+@media (max-device-height: 700px) {
+    .gallery-image {
+        max-height: 560px !important;
+    }
+}
+@media (max-device-height: 600px) {
+    .gallery-image {
+        max-height: 460px !important;
+    }
+}
+@media (max-device-height: 500px) {
+    .gallery-image {
+        max-height: 360px !important;
+    }
+}
+@media (max-device-height: 400px) {
+    .gallery-image {
+        max-height: 260px !important;
+    }
+}
+@media (max-device-height: 300px) {
+    .gallery-image {
+        max-height: 160px !important;
+    }
+}
+/* iOS does not change device-width on rotation, so special-case for known Apple device screen dimensions */
+/* TODO: IE has the same behavior as iOS? */
+/* iPad */
+@media (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    .gallery-image {
+        max-height: 984px !important;
+    }
+}
+@media (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    .gallery-image {
+        max-height: 728px !important;
+    }
+}
+/* iPhone 6 Plus */
+@media (device-width: 414px) and (device-height: 736px) and (orientation: portrait) {
+    .gallery-image {
+        max-height: 374px !important;
+    }
+}
+@media (device-width: 414px) and (device-height: 736px) and (orientation: landscape) {
+    .gallery-image {
+        max-height: 696px !important;
+    }
+}
+/* iPhone 6 */
+@media (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
+    .gallery-image {
+        max-height: 627px !important;
+    }
+}
+@media (device-width: 375px) and (device-height: 667px) and (orientation: landscape) {
+    .gallery-image {
+        max-height: 335px !important;
+    }
+}
+/* iPhone 5 */
+@media (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
+    .gallery-image {
+        max-height: 528px !important;
+    }
+}
+@media (device-width: 320px) and (device-height: 568px) and (orientation: landscape) {
+    .gallery-image {
+        max-height: 280px !important;
+    }
+}
+/* iPhone 4 */
+@media (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
+    .gallery-image {
+        max-height: 440px !important;
+    }
+}
+@media (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
+    .gallery-image {
+        max-height: 280px !important;
+    }
+}
+
+.centered-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

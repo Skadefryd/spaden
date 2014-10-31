@@ -1,0 +1,37 @@
+.speech-byline { margin-left: 68px; position: relative; z-index: 2; }
+.speech { position: relative; border-bottom: 1px solid rgba(0, 0, 0, .2); border-radius:5px; }
+.speech:after {
+    bottom: -17px;
+    content: "";
+    left: 21px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 18px solid;
+    border-left: 18px solid transparent;
+    border-right: 0;
+    -webkit-transform: skew(28deg);
+    -moz-transform: skew(28deg);
+    -ms-transform: skew(28deg);
+    -o-transform: skew(28deg);
+    transform: skew(28deg);
+    z-index: 1;
+
+}
+.speech.bg-lt-gray:after { border-top-color: #eee; }
+.speech.bg-black:after { border-top-color: #000; }
+.speech.bg-dk-gray:after { border-top-color: #666; }
+.speech.bg-lt-gray:after { border-top-color: #eee; }
+.speech.bg-pale-gray:after { border-top-color: #f5f5f5; }
+.speech.bg-white:after { border-top-color: #fff; }
+.speech.bg-dkdk-blue:after { border-top-color: #000066; }
+.speech.bg-dk-blue:after { border-top-color: #0099ff; }
+.speech.bg-blue:after { border-top-color: #a2d2ee; }
+.speech.bg-lt-blue:after { border-top-color: #ddeeff; }
+.speech.bg-pale-blue:after { border-top-color: #f1f8ff; }
+.speech.bg-contrast:after { border-top-color: #444; }
+.speech.bg-firm:after { border-top-color: #ff6600; }
+.speech.bg-positive:after { border-top-color: #669933; }
+.speech.bg-negative:after { border-top-color: #cc0000; }
+.speech.bg-snotgreen:after { border-top-color: #d2e286; }
+.speech.bg-pissyellow:after { border-top-color: #ffff99; }

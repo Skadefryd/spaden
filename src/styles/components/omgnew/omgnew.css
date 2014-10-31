@@ -1,0 +1,5 @@
+.omgnew { position: relative; display: inline-block; }
+.omgnew.new-large:after { content: url("/img/omgnew/omgnew-large.png"); position: absolute; bottom: -8px; }
+.omgnew.new-medium:after { content: url("/img/omgnew/omgnew-medium.png"); position: absolute; bottom: -5px; }
+.omgnew.new-small:after { content: url("/img/omgnew/omgnew-small.png"); position: absolute; bottom: -8px; }
+

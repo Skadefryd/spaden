@@ -1,0 +1,30 @@
+.rating-stars {
+    width: 81px;
+    height: 16px;
+    background: url('/img/ratings/rating-stars.png') no-repeat 0 -32px;
+    text-align: left;
+    vertical-align: top;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+}
+
+.rating-stars.small-stars {
+    width: 56px;
+    height: 11px;
+    background: url('/img/ratings/rating-stars-small.png') no-repeat 0 -18px;
+}
+
+.rating-stars .stars {
+    height: 16px;
+    background: url('/img/ratings/rating-stars.png') no-repeat 0 0;
+    vertical-align: top;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+}
+
+.rating-stars.small-stars .stars {
+    height: 11px;
+    background: url('/img/ratings/rating-stars-small.png') no-repeat 0 0;
+}

@@ -1,0 +1,116 @@
+body,select,input,button,textarea{font:14px/1.3em HelveticaNeueLight,HelveticaNeue-Light,"Helvetica Neue Light",HelveticaNeue,"Helvetica Neue",Arial,Helvetica,sans-serif;*font-size:small;*font:x-small;line-height:1.5;color:#04253c;font-weight: 300;-webkit-font-smoothing: antialiased;}
+html {font-size: 100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+table{font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+code{color:#0B8C8F;}
+
+
+
+/* ====== Headings ====== */
+/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
+h1,.h1,.t1{font-size:35px;font-style:normal;line-height: 1.25em;}
+h2,.h2,.t2{font-size:25px;font-style:normal;line-height: 1.25em;}
+h3,.h3,.t3{font-size:20px;font-style:normal;line-height: 1.25em;}
+h4,.h4,.t4,.largetext{font-size:16px;font-style:normal;line-height: 1.25em;}
+h1,h2,h3,h4{font-weight:300;}/*firefox translates normal to 400 other browsers 300*/
+/* if additional headings are needed they should be created via additional classes, never via location dependant styling */
+.b1 {font-size:14px;}
+.d1, .smalltext {font-size:12px;}
+.d2, .microtext {font-size:10px;}
+
+
+.debug-fonts h1::after,.debug-fonts .h1::after,.debug-fonts .t1::after{content:".t1(35px)";color:#7863c8;}
+.debug-fonts h2::after,.debug-fonts .h2::after,.debug-fonts .t2::after{content:".t2(25px)";color:#7863c8;}
+.debug-fonts h3::after,.debug-fonts .h3::after,.debug-fonts .t3::after{content:".t3(20px)";color:#7863c8;}
+.debug-fonts h4::after,.debug-fonts .h4::after,.debug-fonts .t4::after,.debug-fonts .largetext::after{content:".t4(16px)";color:#7863c8;}
+.debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(12px)";color:#7863c8;} 
+.debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(10px)";color:#7863c8;} 
+@media screen and (max-width:767px){
+	.debug-fonts h1::after,.debug-fonts .h1::after,.debug-fonts .t1::after{content:".t1(25px)";color:#7863c8;}
+	.debug-fonts h2::after,.debug-fonts .h2::after,.debug-fonts .t2::after{content:".t2(20px)";color:#7863c8;}
+	.debug-fonts h3::after,.debug-fonts .h3::after,.debug-fonts .t3::after{content:".t3(16px)";color:#7863c8;}
+	.debug-fonts h4::after,.debug-fonts .h4::after,.debug-fonts .t4::after,.debug-fonts .largetext::after{content:".t4(14px)";color:#7863c8;}
+	.debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(10px)";color:#7863c8;} 
+	.debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(9px)";color:#7863c8;} 
+}
+
+@media screen and (max-width:767px){
+	body,select,input,button,textarea{
+		font:12px/1.3em; 
+		font-weight: 300}
+	  /* ====== Headings ====== */
+	/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
+	h1,.h1,.t1{font-size:25px;font-style:normal;line-height: 1.25em;}
+	h2,.h2,.t2{font-size:20px;font-style:normal;line-height: 1.25em;}
+	h3,.h3,.t3{font-size:16px;font-style:normal;line-height: 1.25em;}
+	h4,.h4,.t4{font-size:14px;font-style:normal;line-height: 1.25em;}
+	/* if additional headings are needed they should be created via additional classes, never via location dependant styling */
+	.b1 {font-size:12px;}
+	.d1, .smalltext {font-size:10px;}
+	.d2, .microtext {font-size:9px;}
+	.largetext { font-size: 14px; }	
+}
+
+/* Fix for webscript subscript + superscript alignment bug */
+sup,sub{line-height:1em;}
+
+em,.em{font-style: italic;}
+strong,.strong{font-weight:bold;}
+.normal{font-weight: normal;}
+/*.object header h1 { font-size: 26px; font-weight: normal; line-height: 34px; }     */
+.justify { text-align: justify; }
+.strikethrough { text-decoration: line-through; }
+.capitalize:first-letter { text-transform: capitalize; }
+.uppercase { text-transform: uppercase; }
+
+
+/* default links */
+a, a:link { color:#07e; text-decoration:none; }
+a:visited { color: #07e; text-decoration:none; }
+a:hover, a:focus, a:active { text-decoration:underline; }
+
+a.neutral { color: #666!important; }
+a > .neutral:hover,
+a:hover > .neutral { text-decoration: underline; }
+
+:focus { outline: none; }
+
+.skiplink { position: absolute; left: -999em; top: 0; }
+
+/* navigational links, visited on */
+a.userhistory:visited, .userhistory a:visited { color:#9ba8b1; }
+a.userhistory:visited:hover, .userhistory a:visited:hover {   }
+
+/* high contrast font color scheme */
+a.contrast:link,.contrast a:link { color:#eee; }
+a.contrast:visited,.contrast a:visited { color:#ddd; }
+a.contrast:focus,.contrast a:hover { color:#fff; }
+a.contrast:focus,.contrast a:focus,
+a.contrast:active,.contrast a:active { background:transparent; }
+
+/* navigational links, visited on */
+a.contrast.userhistory:link,.contrast.userhistory a:link { color:#eee; }
+a.contrast.userhistory:visited,.contrast.userhistory a:visited { color:#eee; }
+a.contrast.userhistory:focus,.contrast.userhistory a:hover { color:#fff; }
+
+/* dark links */
+a.dark-links,a.dark-links:link,.dark-links a,.dark-links a:link{color:#04253c;}
+a.dark-links:visited,.dark-links a:visited{color:#04253c;}
+a.dark-links:hover,.dark-links a:hover,a.dark-links:focus,.dark-links a:focus,a.dark-links:active,.dark-links a:active{ text-decoration: underline; }
+
+/* block the link styling */
+
+a.linkblock:hover, .linkblock a:hover, a.linkblock:active, .linkblock a:active, a.linkblock:focus, .linkblock a:focus, button.blank.linkblock:hover, button.blank.linkblock:active, button.blank.linkblock:focus { text-decoration: none; }
+
+/* toolbar links */
+a.toolbar,a.toolbar:link,.toolbar a,.toolbar a:link{color:#4f6676; text-decoration:none;}
+a.toolbar:visited,.toolbar a:visited{color:#4f6676; text-decoration:none;}
+a.toolbar:hover,.toolbar a:hover,a.toolbar:focus,.toolbar a:focus{color:#4f6676; text-decoration:none;}
+a.toolbar:active,.toolbar a:active{color:#4f6676; text-decoration:none;}
+
+@media screen and (max-width:1024px) {
+    /*Prevents underline on touch/click on mobile */
+    a:link, a:visited, a:hover, a:focus, a:active {
+        text-decoration: none !important;
+    }
+}

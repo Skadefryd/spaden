@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'finn-icons';
+    src:url('/img/fonts/iconfont-01.eot');/* ie9 + */
+    src:url('/img/fonts/iconfont-01.eot?#iefix') format('embedded-opentype'),/* ie6-ie8 */
+    url('/img/fonts/iconfont-01.woff') format('woff'), /* Modern Browsers */
+    url('/img/fonts/iconfont-01.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/img/fonts/iconfont-01.svg#finn-icons') format('svg');/* Legacy ios */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.toolbar [class^="icon-"],
+.toolbar [class*=" icon-"]{line-height:24px;xvertical-align:middle;}
+
+.toolbar [class^="icon-"]:before,
+.toolbar [class*=" icon-"]:before{line-height:1.3em;font-size:1.3em}
+
+.s-touch .toolbar [class^="icon-"]:before,
+.s-touch .toolbar [class*=" icon-"]:before{line-height:1.3em;font-size:1.8em}
+
+ /* ? */
+.toolbar [class^="icon-"] span,
+.toolbar [class*=" icon-"] span{display:none}
+
+.toolbar [class^="icon-"] span.showbydefault,
+.toolbar [class*=" icon-"] span.showbydefault{display:inline}
+
+.toolbar .caption{display:none}
+.toolbar .caption.showbydefault{display:inline}
+
+/* To be used when @font-face not supported:
+.toolbar [class^="icon-"] span,
+.toolbar [class*=" icon-"] span{display:inline}
+*/
+
+
+.icon-eiendom:before, .icon-bil:before, .icon-torget:before, .icon-jobb:before, .icon-reise:before, .icon-MC:before, .icon-boat:before, .icon-naering:before, .icon-oppdrag:before, .icon-smaajobber:before, .icon-bedrifter:before, .icon-kart:before, .icon-nyannonse:before, .icon-moeteplassen:before, .icon-minefunn:before, .icon-minesok:before, .icon-sistesok:before, .icon-tilbakemelding:before, .icon-visning_liste:before, .icon-visning_rute4:before, .icon-visning_rute9:before, .icon-visning_kart:before, .icon-lagrefunn1:before, .icon-lagrefunn2:before, .icon-Facebook:before, .icon-Twitter2:before, .icon-Linkedin:before, .icon-skrivut:before, .icon-epost1:before, .icon-epost2:before, .icon-vurdering1:before, .icon-vurdering2:before, .icon-checked:before, .icon-varsel2:before, .icon-kryss2:before, .icon-kryss1:before, .icon-zoominn:before, .icon-zoomut:before, .icon-lagresok:before, .icon-search:before, .icon-mineannonser:before, .icon-dialog:before, .icon-innstillinger:before, .icon-minlokasjon2:before, .icon-minlokasjon1:before, .icon-redigere:before, .icon-skriv:before, .icon-svar:before, .icon-dele_eksport:before, .icon-eksternlenke:before, .icon-arrow_left:before, .icon-arrow_right:before, .icon-arrow_up:before, .icon-arrow_down:before, .icon-forrige:before, .icon-neste:before, .icon-kalender:before, .icon-tillegg:before, .icon-video:before,.icon-sortering:before, .icon-minfinn:before, .icon-bilde:before, .icon-collapse:before {
+    font-family: 'finn-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    vertical-align:middle;
+}
+.icon-eiendom:before {
+    content: "\21";
+}
+.icon-bil:before {
+    content: "\22";
+}
+.icon-torget:before {
+    content: "\23";
+}
+.icon-jobb:before {
+    content: "\24";
+}
+.icon-reise:before {
+    content: "\25";
+}
+.icon-MC:before {
+    content: "\26";
+}
+.icon-boat:before {
+    content: "\27";
+}
+.icon-naering:before {
+    content: "\28";
+}
+.icon-oppdrag:before {
+    content: "\29";
+}
+.icon-bedrifter:before {
+    content: "\2a";
+}
+.icon-kart:before {
+    content: "\2b";
+}
+.icon-nyannonse:before {
+    content: "\2c";
+}
+.icon-moeteplassen:before {
+    content: "\2d";
+}
+.icon-smaajobber:before {
+    content: "\5e";
+}
+.icon-minefunn:before {
+    content: "\2e";
+}
+.icon-minesok:before {
+    content: "\2f";
+}
+.icon-sistesok:before {
+    content: "\30";
+}
+.icon-tilbakemelding:before {
+    content: "\31";
+}
+.icon-visning_liste:before {
+    content: "\32";
+}
+.icon-visning_rute4:before {
+    content: "\33";
+}
+.icon-visning_rute9:before {
+    content: "\34";
+}
+.icon-visning_kart:before {
+    content: "\35";
+}
+.icon-lagrefunn1:before {
+    content: "\36";
+}
+.icon-lagrefunn2:before, .icon-lagrefunn1.active:before {
+    content: "\37";
+}
+.icon-Facebook:before {
+    content: "\38";
+}
+.icon-Twitter2:before {
+    content: "\39";
+}
+.icon-Linkedin:before {
+    content: "\3a";
+}
+.icon-skrivut:before {
+    content: "\3b";
+}
+.icon-epost1:before {
+    content: "\3c";
+}
+.icon-epost2:before {
+    content: "\3d";
+}
+.icon-vurdering1:before {
+    content: "\3e";
+}
+.icon-vurdering2:before,.icon-vurdering1.active:before {
+    content: "\3f";
+}
+.icon-checked:before {
+    content: "\40";
+}
+.icon-varsel2:before {
+    content: "\41";
+}
+.icon-kryss2:before {
+    content: "\42";
+}
+.icon-kryss1:before {
+    content: "\43";
+}
+.icon-zoominn:before {
+    content: "\44";
+}
+.icon-zoomut:before {
+    content: "\45";
+}
+.icon-lagresok:before {
+    content: "\46";
+}
+.icon-search:before {
+    content: "\47";
+}
+.icon-mineannonser:before {
+    content: "\48";
+}
+.icon-dialog:before {
+    content: "\49";
+}
+.icon-innstillinger:before {
+    content: "\4a";
+}
+.icon-minlokasjon2:before {
+    content: "\4b";
+}
+.icon-minlokasjon1:before {
+    content: "\4c";
+}
+.icon-redigere:before {
+    content: "\4d";
+}
+.icon-skriv:before {
+    content: "\4e";
+}
+.icon-svar:before {
+    content: "\4f";
+}
+.icon-dele_eksport:before {
+    content: "\50";
+}
+.icon-eksternlenke:before {
+    content: "\51";
+}
+.icon-arrow_left:before {
+    content: "\52";
+}
+.icon-arrow_right:before {
+    content: "\53";
+}
+.icon-arrow_up:before {
+    content: "\54";
+}
+.icon-arrow_down:before {
+    content: "\55";
+}
+.icon-forrige:before {
+    content: "\56";
+}
+.icon-neste:before {
+    content: "\57";
+}
+.icon-kalender:before {
+    content: "\58";
+}
+.icon-tillegg:before {
+    content: "\59";
+}
+.icon-video:before {
+    content: "\5a";
+}
+.icon-bilde:before {
+    content: "\5b";
+}
+.icon-sortering:before {
+    content: "\5c";
+}
+.icon-minfinn:before {
+    content: "\5d";
+}
+
+/* Minfinn style collapse filter sections */
+.icon-collapse:before {
+    content: "\55";
+}
+
+.open .icon-collapse:before {
+    content: "\54";
+}

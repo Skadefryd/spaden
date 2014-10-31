@@ -1,0 +1,88 @@
+template,
+datalist
+{
+    display: none;
+}
+
+section,
+nav,
+article,
+aside,
+header,
+footer,
+main,
+figcaption,
+details,
+summary
+{
+    display: block;
+}
+
+figure
+{
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 1em;
+}
+
+mark
+{
+    color: #000;
+    background-color: #ff0;
+}
+
+video
+{
+    object-fit: contain;
+}
+
+audio
+{
+    height: 30px;
+    width: 300px;
+}
+
+keygen
+{
+    display: inline-block;
+}
+
+ruby
+{
+    text-indent: 0;
+}
+
+rt
+{
+    text-indent: 0;
+    line-height: normal;
+}
+
+progress
+{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 1em;
+    width: 10em;
+}
+
+meter
+{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 1em;
+    width: 5em;
+    vertical-align: -0.2em;
+}
+
+menu
+{
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-left: 40px;
+}
+
+/* embed, canvas, bdi, data, time, rp, wbr, source, track, svg, math, output, menuitem */

@@ -1,0 +1,18 @@
+.carusel{
+    position:relative;
+}
+.carusel .next, .carusel .prev{
+    position:absolute;
+    top:50%;
+    cursor: pointer;
+    margin-top: -20px;
+}
+.carusel .next{
+    right:0;
+}
+.carusel .prev{
+    left:0;
+}
+.caruselcontent{
+    margin:0 46px;
+}

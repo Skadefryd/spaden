@@ -1,0 +1,40 @@
+/*----- Custom2 details/summary ----------------------------*/
+.customds2 summary::-webkit-details-marker { /*skjule default marker pa webkit*/
+    display: none
+}
+.customds2 summary:hover { /*Tekst farge ved hover*/
+    color: #0474bf;
+}
+.customds2 details > summary::before,
+.customds2 summary:first-of-type:before { /*erstatter standard pil med pluss*/
+    content: "\02B  ";
+    font-size: 1.7em;
+}
+.customds2 details[open] > summary { /*for a skjule summary text nar apen*/
+    display: none;
+}
+
+/*----- Custom1 details/summary ----------------------------*/
+.customds1 summary::-webkit-details-marker { /*skjule default marker pa webkit*/
+    display: none
+}
+.customds1 summary:hover, .customds1 span:hover { /*Tekst farge ved hover*/
+    color: #0474bf;
+}
+.customds1 details[open] > summary:first-of-type:before {
+    content: "⌃";
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    margin: 0;
+    font-size: 2em;
+    height: 30px;
+}
+.customds1 details > summary:before {
+    content: "⌃";
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    margin: 0;
+    float: right;
+    font-size: 2em;
+    height: 35px;
+}

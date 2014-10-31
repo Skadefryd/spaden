@@ -1,0 +1,142 @@
+.rightify {
+    text-align:right;
+}
+.leftify {
+    text-align: left;
+}
+.centerify {
+    text-align: center;
+}
+.fright{
+    float:right;
+}
+.fleft{
+    float:left;
+}
+.center {
+    margin: 0 auto;
+}
+.valign-top{
+    vertical-align:top;
+}
+.valign-middle{
+    vertical-align:middle;
+}
+.valign-bottom{
+    vertical-align:bottom;
+}
+.clearboth {
+    clear: both;
+}
+.print-only {
+    display: none;
+}
+.relative{
+    position: relative;
+}
+.z-index1{
+    z-index: 1;
+}
+.blockify{
+    display:block;
+}
+.inlineify{
+    display:inline;
+}
+.inlineblockify{
+    display:inline-block;
+}
+.display-table{
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+.display-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+.fit-height {
+    height: 100%;
+}
+.overflowify {
+    overflow: visible;
+}
+.word-break{
+    word-wrap: break-word;
+}
+.no-break{
+    white-space: nowrap;
+}
+.truncate, .ellipsify{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.truncate-2-lines{
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    height: 3em;
+    line-height: 1.5em;
+}
+.truncate-fade-2 {
+    position: relative;
+    line-height: 1.2;
+    max-height: 2.4em; /* Up to 2 lines */
+}
+
+.truncate-fade-2::after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10ex;
+    height: 1.2em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}
+.unselectify {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.opacity25{
+    opacity:0.25;
+}
+.opacity50{
+    opacity:0.50;
+}
+.opacity75{
+    opacity:0.75;
+}
+.roundify{
+    border-radius: 2px
+}
+.clickable { 
+    cursor: pointer; 
+}
+.hidden {
+    display: none !important;
+}
+.invisible{
+    visibility: hidden;
+}
+.visuallyhidden {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    width: 1px;
+}
+.no-border {
+    border: 0!important;
+}
+.fixed {
+    position: fixed;
+}
+hr, .hr{border:0;border-bottom: 1px solid #CDD3D8; margin: 10px 0;} /* Endret farge: ønsket default av skippern, samme farge som .pale utgaven, what to do?; */
+hr.pale, .hr.pale{border:0;border-bottom: 1px solid #cdd3d8; margin: 10px 0;}
+.filters hr:last-child { display: none; }

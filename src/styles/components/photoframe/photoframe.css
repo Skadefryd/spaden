@@ -1,0 +1,107 @@
+/* Photo framing */
+/* add photoframe class to a wrapper directly outside img tag */
+/* photothumbframe class for thumb frame with no shadow */
+
+/*
+.photoframe img, .photoframe .photo {
+    border:1px solid #d8d8d8;
+    padding:3px;
+    border-radius:2px;
+    background-color:white;
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a.photoframe img:hover, a .photoframe img:hover, .photoframe a img:hover, .linkblock:hover .photoframe img, .linkblock:hover .photoframe .photo {
+    border:1px solid #777;
+}
+.photoframe {
+    position:relative;
+    z-index:0;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: left;
+    max-width: 100%;
+    margin-top: 1px;
+}
+@media screen and (min-width:768px) {
+    .photoframe:after {
+        bottom: 5px;
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 25px;
+        z-index: -1;
+        padding: 0;
+        margin: 0 5%;
+        display: block;
+        background: transparent;
+        border-radius: 100% / 50%;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
+.photoframe img { display: block; }
+
+*/
+/* eksperimentel kode for � beskj�re thumbs til samme st�rrelse *//*
+
+.thumbwrap,
+.thumbwrap-allimages {
+    height:52px;
+    width:85px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #d8d8d8, 0 0 0 2px #fff, 0 0 0 2px #d8d8d8, 0 3px 4px rgba(0, 0, 0, 0.3);
+    margin:10px 10px 10px 3px;
+    display: inline-block;
+    float: left;
+}
+.thumbwrap{
+    overflow:hidden;
+    z-index:1;
+}
+.thumbwrap-allimages {
+    background: #999;
+    text-align: center;
+}
+.thumbwrap-allimages a {
+    height:52px;
+    width:85px;
+    display: inline-block;
+    text-align: center;
+    margin: -10px 0 0 -6px;
+    padding: 7px 0 0 0;
+}
+.thumbwrap:hover,
+.thumbwrap-allimages:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #777, 0 0 0 2px #fff, 0 0 0 2px #777, 0 3px 4px rgba(0, 0, 0, 0.4);
+}
+.itemSelected .thumbwrap {
+    box-shadow: 0 0 0 2px #ccc, 0 0 0 3px #777, 0 0 0 2px #ccc, 0 0 0 2px #777, 0 3px 12px rgba(0, 0, 0, 0.8);
+}
+.thumbinnerwrap{
+    height:200px;
+    width:200px;
+    position:relative;
+    margin-top:-75px;
+    *margin-top:0;
+    margin-left:-60px;
+    text-align:center;
+    line-height:200px;
+    display:inline-block;
+}
+.thumbinnerwrap img{
+    margin:0 auto;
+    display:inline-block !important;
+    vertical-align:middle;
+    width:94px;
+    min-height:54px;
+}
+
+
+.image.tiny{width:50px;xheight:40px}
+.image.small{width:110px;xheight:73px}
+.image.small.result{width:120px;height: 80px; overflow: hidden;}
+.image.medium{width:320px;xheight:200px}
+.image.full{width:auto;height:auto}*/

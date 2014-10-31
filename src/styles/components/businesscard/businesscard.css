@@ -1,0 +1,100 @@
+/*
+.contact {
+    position: relative;
+    width: 278px;
+    height: 160px;
+    box-shadow: 2px 2px 10px #ccc;
+    line-height: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-size: 100%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.contact a:link {
+    text-decoration: underline;
+}
+.contact a:hover {
+    text-decoration: none;
+}
+.contact .contact-image {
+    position: absolute;
+    top:10px;
+    left: 10px;
+    max-width: 80px;
+    max-height: 120px;
+}
+.contact .contact-logo {
+    position: absolute;
+    right: 10px;
+    max-width: 80px;
+    max-height: 40px;
+}
+.contact .contact-person {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+.contact .contact-info {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    font-size: .85em;
+}
+.contact h1 {
+    font-size: 16px;
+    font-weight: normal;
+}
+.contact .multicol dt {
+    margin: 0;
+    width: 60px;
+    line-height: 1.1em;
+}
+.contact .multicol dd {
+    margin: 0 0 0 60px;
+    line-height: 1.1em;
+}*/
+.businesscard .partner {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+}
+.businesscard .partner h3 {
+    font-size: 12px;
+    font-variant: small-caps;
+    display: inline-block;
+}
+
+
+/* ====== Businesscards deprecated?  ====== */
+/*
+.bs-card{
+    margin:10px;
+    box-shadow: 2px 2px 8px 0 #cccccc;
+    z-index:2;
+}
+.bs-card.primary{
+    margin-top:-170px;
+    margin-left:30px;
+    display:none
+}
+.bs-card:after {
+    bottom: 7px;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 25px;
+    z-index: 1;
+}
+.bs-card:after{
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    left: auto;
+    right: 10px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.2);
+}
+*/

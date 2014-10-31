@@ -1,0 +1,362 @@
+/*
+	Skal kun inneholde finnspesifikt stuff, ikke skap avhengigheter slik at andre må inkludere denne. 
+
+*/
+
+/* forbrukertrygghet */
+.warranty .hd { 
+	background-image: url("/img/happylock.png"); 
+	background-repeat: no-repeat; 
+	background-position: 20px 5px; 
+	padding-left: 25px; 
+}
+.warranty ol li { 
+	list-style-type: decimal; margin: 0 0 5px 20px; 
+}
+.warranty-inline img { 
+	padding: 7px 10px; border-radius: 3px; 
+}
+
+/* annonser forkledd som innhold */
+.advertisement { 
+	font-size: 12px; color: #333; 
+}
+.advertisement .smalltext { 
+	font-size: 9px; font-weight: normal; 
+}
+
+/* annonseinnlegging */
+.newobject .inner { 
+	background-image: url("/img/icon_register.png"); 
+	background-repeat: no-repeat; 
+	background-position: 20px 10px; 
+	height: 70px; 
+	line-height: 50px; 
+	text-indent: 70px; 
+}
+
+/* markedsforside */
+.frontpage-search .searchlinks .mrm:last-child { 
+	margin-right: 0!important; 
+}
+
+/* Advanced search */
+.taxChild {
+    width: 100%;
+}
+
+/* Image view (store bilder) */
+.imagecontainer{
+    position:relative;
+}
+.pane {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.rightpane{
+    right:0;
+}
+.btn-gallery{
+    visibility: hidden;
+    position:absolute;
+    top:40%;
+    z-index:50;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .3);
+}
+.btn-gallery:hover{
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .6);
+}
+.imagecontainer:hover .btn-gallery {
+    visibility: visible;
+}
+.btn-gallery:after {
+    content: "";
+    display:block;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    z-index:60;
+    visibility: visible;
+}
+.prev-img:after {
+    border-right: 15px solid #fff;
+}
+.next-img:after {
+    border-left: 15px solid #fff;
+}
+.prev-img{
+    left:0;
+    border-radius: 0 2px 2px 0;
+}
+.next-img{
+    right:0;
+    border-radius: 2px 0 0 2px;
+}
+
+/* For common popup notice (helptext.js) */
+.supportText {
+    background-color: #535353;
+    border: white 1px solid;
+    border-radius: 2px;
+    font-size: 12px;
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    z-index: 999;
+    font-family: arial, sans-serif;
+    color: white;
+}
+
+.supportText a {
+    color: white;
+    text-decoration: underline;
+}
+
+.helptext {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+}
+
+/* Flere annonser fra ... */
+.crosspromotion img { 
+	max-width: 100%; 
+	max-height: 60px; 
+}
+
+/* Bli brediftskunde  */
+.bd.partnerall{
+    background: url("/img/partnerinfo/partnerall.png") no-repeat scroll bottom right;
+}
+.bd.classifiedinput{
+    background: url("/img/partnerinfo/buyads.png") no-repeat scroll center right;
+    min-height:490px;
+}
+
+/* Tredjepartsinnhold p� objektsiden */
+.separated-content { 
+	border:1px solid #eee; 
+	border-radius:2px; 
+	padding-right:10px; 
+	padding-top:5px; 
+	box-shadow:inset 0 3px 10px #efefef; 
+}
+.separated-content:hover { 
+	border:1px solid #ccc; 
+}
+/* filter */
+.multicollist li{
+    width:50%;
+    float:left;
+}
+.navigator { color: #666; }
+.navigator li span { color: #666; }
+.navigator h4 { color: #000; }
+.navigator label { float: none; width: auto; }
+.navigator .submitFilter { margin-top: 10px; }
+.navigator .range { width: 70px; text-align: right; }
+.navigators hr:last-of-type,
+.navigator:last-of-type hr { display: none; }
+
+.selectedFilter a { float:left;margin:2px 6px 0 0 }
+
+.resultlist .media div.img { width: 226px; min-height: 80px; }
+.resultlist .media .objectinfo { width: 95%; }
+
+@media screen and (max-width:767px) {
+    .resultlist .media .objectinfo { width: 100%; }
+}
+/* Progress loaders */
+/* egen component? */
+.progress {
+    width: 16px;
+    height: 16px;
+    background: url("/img/ajax-loader-circle.gif") no-repeat scroll 50% 50% #FFF;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Annonsegalleri */
+.ad-gallery.horizontal .logoframe { 
+	height: 105px; 
+	display: table-cell; 
+	vertical-align: middle; }
+.ad-gallery.horizontal .unit { 
+	border-right: 1px solid #edf0f1; 
+	min-height: 165px; 
+}
+.ad-gallery.horizontal .lastUnit { 
+	border-right: none; 
+}
+.ad-gallery img { 
+	max-height: 100px; 
+	max-width: 135px; 
+}
+.ad-gallery.vertical img { 
+	max-height: 150px; 
+}
+.ad-gallery .pseudoCrop { 
+	max-width: 100%!important; 
+}
+.ad-gallery.horizontal .logoframe { 
+	*text-align: left; 
+	} /* IE7 */
+.ad-gallery.horizontal .mam { 
+	*margin: 5px!important; 
+	} /* IE7 */
+.ad-gallery.horizontal .unit { 
+	*height: 165px; 
+	} /* IE7 */
+
+/* Jquery UI datepicker */
+/* Flytt til tredjeparts? */
+.ui-widget-header {
+    border: 1px solid #A2D2EE;
+    margin-bottom: -3px;
+    border-radius: 2px 2px 0 0;
+}
+.ui-datepicker-inline .ui-widget-header {
+    border: 0;
+}
+.ui-datepicker-next span, .ui-datepicker-prev span {
+    text-indent: -9000px;
+    cursor: pointer;
+}
+/* Object beskrivelsestekster */
+.object-description table { 
+	margin-left: 20px; 
+}
+.object-description strong em, .article strong em { 
+	font-weight: bold; 
+}
+.object-description em strong, .article em strong { 
+	font-style: italic; 
+}
+.object .colspan2 hr:last-child { 
+	display: none; 
+} /* Deprecated? */
+
+/* Partnerinfo */
+.partnerinfo li { 
+	list-style: none; 
+}
+.partnerinfo li ul li { 
+	list-style: disc outside; 
+}
+
+/* Checked headline */
+.checked-headline:before { 
+	content: url("/img/check.png"); 
+	margin-left: -30px; 
+	margin-right: 11px; 
+	display: block; 
+	float: left; 
+	margin-top: 2px; 
+}
+
+/* Oppdrag intern reklame */
+.oppdrag-ad .oppdrag-object {background:#FFFFFF url("/styles/static/oppdrag-example-job.png") no-repeat; height:87px; }
+
+/* Let's deal intern reklame */
+.letsdeal-ad { overflow: visible; }
+.letsdeal-ad .imgExt { position: relative; }
+.letsdeal-ad .imgExt .discount {
+    background: url("/img/common/trafficfund/letsdeal/letsdeal_discount.png") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 43px;
+}
+.prisjakt a { text-decoration: none; }
+.prisjakt .item {
+    display:block;
+    background-repeat:no-repeat;
+    background-position:260px 10px;
+    padding:0px 70px 0px 0px;
+    clear:both;
+    border-top: dotted 1px #a2d2ee;
+    min-height:50px;
+}
+.prisjakt p {
+    line-height:16px;
+    color:#666;
+    font-weight:bold;
+}
+.prisjakt .price {
+    color:#46790e;
+}
+
+/* SoMe-linker i kontaktfelt */
+.some-contact { display: block; float: left; margin: 0 5px 0 0; width: 16px; height: 16px; text-indent: -9000px; background-repeat: no-repeat; *margin-top: 4px; }
+.some-contact.linkedin { background: url("/img/3rdparty/linkedin.png"); }
+.some-contact.facebook { background: url("/img/3rdparty/facebook.png"); }
+.some-contact.twitter { background: url("/img/3rdparty/twitter.png"); }
+
+/* Brukes på reise */
+.object-location-map { height: 234px; width: 272px; }
+.object-location-map img { background: transparent; padding: 0; }
+
+/* wtfarrows? */
+.right-arrow {
+    display: block;
+    margin-top: 3px;
+    padding-right: 5px;
+    width: 0;
+    height:0;
+    border-bottom:5px solid transparent;  /* left arrow slant */
+    border-top:5px solid transparent; /* right arrow slant */
+    border-left:5px solid #2f2f2f; /* bottom, add background color here */
+    font-size:0;
+    line-height:0px;
+}
+
+.right-arrow.medium {
+    border-bottom:8px solid transparent;
+    border-top:8px solid transparent;
+    border-left:8px solid #2f2f2f;
+}
+
+.left-arrow {
+    display: block;
+    margin-top: 3px;
+    padding-right: 5px;
+    width: 0;
+    height:0;
+    border-bottom:5px solid transparent;
+    border-top:5px solid transparent;
+    border-right:5px solid #2f2f2f;
+    font-size:0;
+    line-height:0px;
+}
+
+.left-arrow.medium {
+    border-bottom:8px solid transparent;
+    border-top:8px solid transparent;
+    border-right:8px solid #2f2f2f;
+}
+
+.marker{
+    margin-top:-23px;
+    margin-left:28px;
+}
+
+
+/* Override for parent text container, adding margin on the parent, removing horizontal margin on child p-tags */
+/* Hva er dette og hvor hører den egentlig hjemme? */
+.bd.margined {
+    margin: 10px 20px;
+}
+.bd.margined p {
+    margin: 10px 0;
+}
+
+/* m.banner-stuff */
+.stickycontainer                                {background: none repeat scroll 0 0 #fff;  text-align: center; box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.30); -webkit-box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.30);}
+.stickycontainer.goodsticky                     {position: fixed; left: 0; right: 0; bottom: 0; }
+.stickycontainer.badsticky                      {position: absolute; left: 0; right: 0;}
+.stickycontainer > button                       {position: absolute; top: 1px; right: 1px; background-color: transparent;}
+.stickycontainer .dismiss-sticky                {position: absolute; top: 3px; right: 5px; color: #fff; width: 22px; height: 22px; background: #000; border: 2px solid #fff; -webkit-border-radius:1em; border-radius: 1em; -webkit-appearance: none; box-shadow: 0 0 4px #000000; }
