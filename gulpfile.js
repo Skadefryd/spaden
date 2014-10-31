@@ -85,12 +85,17 @@ gulp.task('build-legacy-css', ['sass'], function(){
 });
 
 gulp.task('package', ['copy-src-toDist', 'build-so-css', 'build-legacy-css'], function(){
+	var artifactVersion = pkg.version;
+	if (util.env.versionOverride){
+		artifactVersion = util.env.versionOverride;
+		console.log('version overrrid', artifactVersion);
+	}
 	return gulp.src([
 			distDir + '/' + pkg.name + '-' + pkg.version + '/**'
 			],
 			{base: distDir + '/' + pkg.name + '-' + pkg.version + '/'}
 		)
-		.pipe(tar(pkg.name + '-' + pkg.version + '.tar'))
+		.pipe(tar(pkg.name + '-' + artifactVersion + '.tar'))
 		.pipe(gzip())
 		.pipe(gulp.dest('./dist'));
 });
