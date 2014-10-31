@@ -1,6 +1,6 @@
 {
   "name": "spaden",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Finn.no front-end CSS framework built on top of OOCSS",
   "scripts": {
     "start": "./node_modules/.bin/gulp && node docs/lib/createdocs.js && node docs/lib/server/index.js",
@@ -22,7 +22,7 @@
     "gulp-tag-version": "^1.1.0",
     "gulp-tar": "^1.0.0"
   },
-  "contributors":[
+  "contributors": [
     "Snorre Nygaard <skadegryd>",
     "Anders Johnsen <antidecaf>",
     "David Hasäther <hzr>",
