@@ -4,10 +4,8 @@ There is a Scandnavian sfigure of speech which is [call a spade a spade](https:/
 
 [![travis status](https://api.travis-ci.org/finn-no/spaden.png)](https://travis-ci.org/finn-no/spaden)
 
-<!-- 
 [![NPM](https://nodei.co/npm/spaden.png?stars&downloads)](https://nodei.co/npm/spaden/)
 [![NPM](https://nodei.co/npm-dl/spaden.png)](https://nodei.co/npm/spaden/)
--->
 
 ## Building
 
