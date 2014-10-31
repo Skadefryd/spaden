@@ -1,6 +1,7 @@
-# Arnfinn - the FINN.no CSS framework 
+# Spaden - the FINN.no CSS framework 
 
-To be added...
+There is a Scandnavian sfigure of speech which is [call a spade a spade](https://en.wikipedia.org/wiki/Call_a_spade_a_spade). The is the reason this project is called Spaden.
+
 
 ## Building
 

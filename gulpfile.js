@@ -55,7 +55,7 @@ gulp.task('build-so-css', ['sass'], function(){
 			processImport: true,
 			debug: false
 		}))
-		.pipe(concat('arnfinn.css'))
+		.pipe(concat('spaden.css'))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(destinationDir))
 		.pipe(sourcemaps.init())
@@ -64,7 +64,7 @@ gulp.task('build-so-css', ['sass'], function(){
 			processImport: true,
 			debug: true
 		}))
-		.pipe(concat('arnfinn.min.css'))
+		.pipe(concat('spaden.min.css'))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(destinationDir))
 });
