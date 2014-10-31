@@ -2,7 +2,6 @@ var concat = require('gulp-concat');
 var filesize = require('gulp-filesize');
 var gulp = require('gulp');
 var gzip = require('gulp-gzip');
-var maven = require('gulp-maven-deploy');
 var minifyCSS = require('gulp-minify-css');
 var pkg = require('./package');
 var rename = require('gulp-rename');
