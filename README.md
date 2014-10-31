@@ -11,7 +11,13 @@ There is a Scandnavian sfigure of speech which is [call a spade a spade](https:/
 
 ## Building
 
+	# Install dependencies
 	$ npm install
+
+	# Build artifacts
+	$ npm run package
+
+The built artifacts reside in the _/dist_ folder in the current directory.
 
 ## Deployment
 
