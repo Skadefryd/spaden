@@ -5,6 +5,7 @@ var gzip = require('gulp-gzip');
 var minifyCSS = require('gulp-minify-css');
 var pkg = require('./package');
 var rename = require('gulp-rename');
+var replace = require('gulp-replace');
 var rimraf = require('gulp-rimraf');
 var sourcemaps = require('gulp-sourcemaps');
 var spawn = require('child_process').spawn;
@@ -47,7 +48,13 @@ gulp.task('copy-to-build', ['clean'], function() {
         .pipe(gulp.dest(buildDir));
 });
 
-gulp.task('sass', ['copy-to-build'], function() {
+gulp.task('replace-imgpaths', ['copy-to-build'], function() {
+    return gulp.src(buildDir + '/**/*.css')
+        .pipe(replace(/\/img\//g, 'img/'))
+        .pipe(gulp.dest(buildDir));
+});
+
+gulp.task('sass', ['replace-imgpaths'], function() {
     // add SASS support....
 });
 
@@ -133,6 +140,7 @@ gulp.task('release', [
     'npm-publish'
 ]);
 gulp.task('default', [
+    'replace-imgpaths',
     'sass',
     'build-so-css',
     'build-legacy-css',
