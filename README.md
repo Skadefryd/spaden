@@ -48,15 +48,7 @@ When releasing you must specify how to bump the version number. Please consult t
 
 	<link rel="stylesheet" type="text/css" media="print" 
 	href="so/print.css">
-# Contributing
 
-## Adding new stuff
+## Contributing?
 
-1. All new components should reside in separate folders
-1. The component you created should be added to the CSS file which bundles everything in core/components/thirdparty
-
-## Quality checklist
-
-1. You CSS code must work for all screen-sizes
-1. Your widget should work in all browsers
-1. Follow design the [principles of Object Oriented CSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/)
+Check out our [contribution guidelines](blob/master/contributing.md) for the most efficient way to contribute.
