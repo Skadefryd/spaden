@@ -17,112 +17,124 @@ var destinationDir = distDir + pkg.name + '-' + pkg.version;
 
 var debugMode = false;
 
-gulp.task('clean', function(){
-	return gulp.src([
-		buildDir,
-		distDir
-	], {read: false}).pipe(rimraf({force:true}));
+gulp.task('clean', function() {
+    return gulp.src([
+        buildDir,
+        distDir
+    ], {
+        read: false
+    }).pipe(rimraf({
+        force: true
+    }));
 });
 
-gulp.task('copy-src-toDist', ['clean'], function(){
-	return gulp.src([
-		'./src/**'
-	], {base: 'src/'})
-	.pipe(gulp.dest(destinationDir));
+gulp.task('copy-src-toDist', ['clean'], function() {
+    return gulp.src([
+            './src/**'
+        ], {
+            base: 'src/'
+        })
+        .pipe(gulp.dest(destinationDir));
 });
 
-gulp.task('copy-to-build', ['clean'], function(){
-	return gulp.src([
-		'./src/styles/**',
-		'./src/styles/legacy/**'
-		], {base: 'src/styles/'})
-		.pipe(gulp.dest(buildDir));
+gulp.task('copy-to-build', ['clean'], function() {
+    return gulp.src([
+            './src/styles/**',
+            './src/styles/legacy/**'
+        ], {
+            base: 'src/styles/'
+        })
+        .pipe(gulp.dest(buildDir));
 });
 
-gulp.task('sass', ['copy-to-build'], function(){
-	// add SASS support....
+gulp.task('sass', ['copy-to-build'], function() {
+    // add SASS support....
 });
 
-gulp.task('build-so-css', ['sass'], function(){
-	return gulp.src([
-			buildDir + '/core/core.css',
-			buildDir + '/components/components.css'
-		])
-		.pipe(sourcemaps.init())
-		.pipe(minifyCSS({
-			keepBreaks: true,
-			processImport: true,
-			debug: false
-		}))
-		.pipe(concat('spaden.css'))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest(destinationDir))
-		.pipe(sourcemaps.init())
-		.pipe(minifyCSS({
-			keepBreaks: false,
-			processImport: true,
-			debug: true
-		}))
-		.pipe(concat('spaden.min.css'))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest(destinationDir))
+gulp.task('build-so-css', ['sass'], function() {
+    return gulp.src([
+            buildDir + '/core/core.css',
+            buildDir + '/components/components.css'
+        ])
+        .pipe(sourcemaps.init())
+        .pipe(minifyCSS({
+            keepBreaks: true,
+            processImport: true,
+            debug: false
+        }))
+        .pipe(concat('spaden.css'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(destinationDir))
+        .pipe(sourcemaps.init())
+        .pipe(minifyCSS({
+            keepBreaks: false,
+            processImport: true,
+            debug: true
+        }))
+        .pipe(concat('spaden.min.css'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(destinationDir))
 });
 
-gulp.task('build-legacy-css', ['sass'], function(){
-	gulp.src(buildDir + '/legacy/**')
-		.pipe(concat('legacy.css'))
-		.pipe(gulp.dest(destinationDir))
-		.pipe(sourcemaps.init())
-		.pipe(minifyCSS({
-			keepBreaks: false,
-			processImport: true,
-			debug: false
-		}))
-		.pipe(concat('legacy.min.css'))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest(destinationDir))
+gulp.task('build-legacy-css', ['sass'], function() {
+    gulp.src(buildDir + '/legacy/**')
+        .pipe(concat('legacy.css'))
+        .pipe(gulp.dest(destinationDir))
+        .pipe(sourcemaps.init())
+        .pipe(minifyCSS({
+            keepBreaks: false,
+            processImport: true,
+            debug: false
+        }))
+        .pipe(concat('legacy.min.css'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(destinationDir))
 });
 
-gulp.task('package', ['copy-src-toDist', 'build-so-css', 'build-legacy-css'], function(){
-	var artifactVersion = pkg.version;
-	if (util.env.versionOverride){
-		artifactVersion = util.env.versionOverride;
-		console.log('version overrrid', artifactVersion);
-	}
-	return gulp.src([
-			distDir + '/' + pkg.name + '-' + pkg.version + '/**'
-			],
-			{base: distDir + '/' + pkg.name + '-' + pkg.version + '/'}
-		)
-		.pipe(tar(pkg.name + '-' + artifactVersion + '.tar'))
-		.pipe(gzip())
-		.pipe(gulp.dest('./dist'));
+gulp.task('package', ['copy-src-toDist', 'build-so-css', 'build-legacy-css'], function() {
+    var artifactVersion = pkg.version;
+    if (util.env.versionOverride) {
+        artifactVersion = util.env.versionOverride;
+        console.log('version overrrid', artifactVersion);
+    }
+    return gulp.src([
+            distDir + '/' + pkg.name + '-' + pkg.version + '/**'
+        ], {
+            base: distDir + '/' + pkg.name + '-' + pkg.version + '/'
+        })
+        .pipe(tar(pkg.name + '-' + artifactVersion + '.tar'))
+        .pipe(gzip())
+        .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('npm-version', function(done){
-	var versionType = util.env.versionType;
-	spawn('npm', ['version', versionType], { stdio: 'inherit' }).on('close', done);	
+gulp.task('npm-version', function(done) {
+    var versionType = util.env.versionType;
+    spawn('npm', ['version', versionType], {
+        stdio: 'inherit'
+    }).on('close', done);
 });
 
 gulp.task('npm-publish', ['package'], function(done) {
-  spawn('npm', ['publish', '.'], { stdio: 'inherit' }).on('close', done);
+    spawn('npm', ['publish', '.'], {
+        stdio: 'inherit'
+    }).on('close', done);
 });
 
 gulp.on('err', function(e) {
-  console.log(e.err.stack);
+    console.log(e.err.stack);
 });
 
 gulp.task('release', [
-	'npm-version',
-	'copy-src-toDist',
-	'build-so-css',
-	'build-legacy-css',
-	'package',
-	'npm-publish'
+    'npm-version',
+    'copy-src-toDist',
+    'build-so-css',
+    'build-legacy-css',
+    'package',
+    'npm-publish'
 ]);
 gulp.task('default', [
-	'sass',
-	'build-so-css',
-	'build-legacy-css',
-	'package'
+    'sass',
+    'build-so-css',
+    'build-legacy-css',
+    'package'
 ]);
