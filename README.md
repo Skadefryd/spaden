@@ -51,4 +51,4 @@ When releasing you must specify how to bump the version number. Please consult t
 
 ## Contributing?
 
-Check out our [contribution guidelines](blob/master/contributing.md) for the most efficient way to contribute.
+Check out our [contribution guidelines](contributing.md) for the most efficient way to contribute.
