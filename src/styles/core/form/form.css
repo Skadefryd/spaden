@@ -75,6 +75,7 @@ select, input[type=file] {
 select[multiple] {
     height: inherit;
     background-color: #ffffff;
+    overflow: auto;
 }
 
 /* File input with button overlaid from m.skeleton */
