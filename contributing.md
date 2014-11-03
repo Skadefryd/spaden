@@ -1,8 +1,9 @@
 # We would love your contribution!
 
-The best thing is to always file an issue before submitting a pull-request. This is not a requirement, but a general best practice. This makes it easier to discuss the issue before any code is written. Sometimes the issues might already be fixed or will be out of scope for the module.
+This project's primary objective is to support anything that FINN.no builds. It was never intended to be a generic framework like Bootstrap or similar projects. It was put out as Open Source primarly to acomodate a need for other Open Source projects to use our standard framework.
 
 # Pull requests
+The best thing is to always file an issue before submitting a pull-request. This is not a requirement, but a general best practice. This makes it easier to discuss the issue before any code is written. Sometimes the issues might already be fixed or will be out of scope for the module.
 
 * merge all commits into on single commit for the pull request
 * do not alter the version number, this is done in the release process
