@@ -14,13 +14,12 @@ body,select,input,button,textarea{
     font:14px/1.5 finnmain,Arial,Helvetica,sans-serif;
     color:#04253c;
 }
-/*
-body,select,input,button,textarea{font:14px/1.3em HelveticaNeueLight,HelveticaNeue-Light,"Helvetica Neue Light",HelveticaNeue,"Helvetica Neue",Arial,Helvetica,sans-serif;*font-size:small;*font:x-small;line-height:1.5;color:#04253c;font-weight: 300;-webkit-font-smoothing: antialiased;}
+
 html {font-size: 100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 table{font-size:inherit;font:100%;}
 pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
 code{color:#0B8C8F;}
-*/
+
 
 
 /* ====== Headings ====== */
