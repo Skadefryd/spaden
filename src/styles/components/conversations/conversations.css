@@ -116,6 +116,7 @@
 
 .conversation{
     position:relative;
+    word-wrap: break-word;
 }
 .conversation.lefty{
     background-color:#4f6676;
@@ -133,8 +134,8 @@
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-right:10px solid #4f6676; 
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #4f6676;
     z-index: 1;
 }
 .conversation.righty:after {
@@ -145,8 +146,8 @@
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-left:10px solid #0077EE; 
+    border-bottom: 10px solid transparent;
+    border-left:10px solid #0077EE;
     z-index: 1;
 }
 /* test only, have to be rewritten */

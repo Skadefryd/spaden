@@ -6,7 +6,7 @@
 
 /*  */
 .hover-background a:hover{
-	background-color:#f4f7fa;	
+	background-color:#f4f7fa;
 }
 
 /* Market hover */
@@ -109,9 +109,19 @@
 .list-line:not(:last-child) {
     border-bottom: 1px solid #CDD3D8;
 }
-/* skal vi lage en generell greie for slike vertikale skillelinjer? Denne er brukt til footer */
-.verticalhr li:not(:last-child){
-   border-right:1px solid #CDD3D8;
+
+/* footer specific, default is collapsed for old phones, temporary fix? */
+.horizontal-list.default1col li{
+    display:block;
+}
+@media screen and (min-width: 768px) {
+    .horizontal-list.default1col li{
+        display:inline;
+    }
+    /* should we make a generic thing for vertical dividers. this one is for the footer */
+    .verticalhr li:not(:last-child){
+        border-right:1px solid #CDD3D8;
+    }
 }
 
 

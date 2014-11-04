@@ -1,9 +1,26 @@
+@font-face {
+    font-family: finnmain;
+    src: local('HelveticaNeue-Light');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: finnmain;
+    src: local('HelveticaNeue');
+    font-weight: bold;
+}
+
+body,select,input,button,textarea{
+    font:14px/1.5 finnmain,Arial,Helvetica,sans-serif;
+    color:#04253c;
+}
+/*
 body,select,input,button,textarea{font:14px/1.3em HelveticaNeueLight,HelveticaNeue-Light,"Helvetica Neue Light",HelveticaNeue,"Helvetica Neue",Arial,Helvetica,sans-serif;*font-size:small;*font:x-small;line-height:1.5;color:#04253c;font-weight: 300;-webkit-font-smoothing: antialiased;}
 html {font-size: 100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 table{font-size:inherit;font:100%;}
 pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
 code{color:#0B8C8F;}
-
+*/
 
 
 /* ====== Headings ====== */
@@ -23,20 +40,20 @@ h1,h2,h3,h4{font-weight:300;}/*firefox translates normal to 400 other browsers 3
 .debug-fonts h2::after,.debug-fonts .h2::after,.debug-fonts .t2::after{content:".t2(25px)";color:#7863c8;}
 .debug-fonts h3::after,.debug-fonts .h3::after,.debug-fonts .t3::after{content:".t3(20px)";color:#7863c8;}
 .debug-fonts h4::after,.debug-fonts .h4::after,.debug-fonts .t4::after,.debug-fonts .largetext::after{content:".t4(16px)";color:#7863c8;}
-.debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(12px)";color:#7863c8;} 
-.debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(10px)";color:#7863c8;} 
+.debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(12px)";color:#7863c8;}
+.debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(10px)";color:#7863c8;}
 @media screen and (max-width:767px){
 	.debug-fonts h1::after,.debug-fonts .h1::after,.debug-fonts .t1::after{content:".t1(25px)";color:#7863c8;}
 	.debug-fonts h2::after,.debug-fonts .h2::after,.debug-fonts .t2::after{content:".t2(20px)";color:#7863c8;}
 	.debug-fonts h3::after,.debug-fonts .h3::after,.debug-fonts .t3::after{content:".t3(16px)";color:#7863c8;}
 	.debug-fonts h4::after,.debug-fonts .h4::after,.debug-fonts .t4::after,.debug-fonts .largetext::after{content:".t4(14px)";color:#7863c8;}
-	.debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(10px)";color:#7863c8;} 
-	.debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(9px)";color:#7863c8;} 
+	.debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(10px)";color:#7863c8;}
+	.debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(9px)";color:#7863c8;}
 }
 
 @media screen and (max-width:767px){
 	body,select,input,button,textarea{
-		font:12px/1.3em; 
+		font:12px/1.3em;
 		font-weight: 300}
 	  /* ====== Headings ====== */
 	/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
@@ -48,7 +65,7 @@ h1,h2,h3,h4{font-weight:300;}/*firefox translates normal to 400 other browsers 3
 	.b1 {font-size:12px;}
 	.d1, .smalltext {font-size:10px;}
 	.d2, .microtext {font-size:9px;}
-	.largetext { font-size: 14px; }	
+	.largetext { font-size: 14px; }
 }
 
 /* Fix for webscript subscript + superscript alignment bug */

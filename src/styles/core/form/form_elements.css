@@ -4,11 +4,11 @@ select,
 textarea,
 button,
 a.icon,
-a.button{ 
+a.button{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   font-family: HelveticaNeueLight, HelveticaNeue-Light,"Helvetica Neue Light",HelveticaNeue,"Helvetica Neue",Arial,Helvetica,sans-serif;
   color:#444;
 }
@@ -30,13 +30,10 @@ textarea{
   height:auto;
   border:1px solid;
   background-color:#fff;
-  border-color:#9ba8b1; 
+  border-color:#9ba8b1;
   -webkit-border-radius:1px;
   -moz-border-radius:1px;
   border-radius:2px;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
   outline: none;
 }
 
@@ -113,10 +110,14 @@ input[type="search"]:focus {
     text-indent: 0;
 }
 
-
 select[multiple] {
     height: inherit;
     background-color: #ffffff;
+    overflow: hidden;
+}
+
+textarea {
+    resize: vertical;
 }
 
 /* Input behavior */
@@ -203,7 +204,7 @@ a.button{
   padding: 10px 12px;
   margin: 0;
   color:#0077ee;
-  font-size:18px;
+  font-size:16px;
   border-color: #0077ee;
   border-radius: 2px;
   -webkit-appearance: none;
@@ -365,7 +366,7 @@ button:disabled:hover {
   a.icon,
   a.button{
     font-size: 14px;
-    padding: 6px 10px;      
+    padding: 6px 10px;
   }
   input.primary,
   button.primary,
@@ -388,13 +389,13 @@ button:disabled:hover {
 input[type="file"]{
   height: 34px;
   padding: 5px 0;
-  width: 100%; 
+  width: 100%;
   border: 1px solid #999;
-  -webkit-border-radius:1px; 
-  -moz-border-radius:1px; 
-  border-radius:2px; 
-  background-color: #fff; 
-  color: #444; 
+  -webkit-border-radius:1px;
+  -moz-border-radius:1px;
+  border-radius:2px;
+  background-color: #fff;
+  color: #444;
   border: 1px solid #999;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -402,8 +403,8 @@ input[type="file"]{
 }
 */
 
-/* Fancy radios 
-.undivify input[type='radio'], 
+/* Fancy radios
+.undivify input[type='radio'],
 .undivify input[type='checkbox'] {
     opacity: 0;
     float: left;
@@ -416,7 +417,7 @@ input[type="file"]{
     margin: 0;
     clear: none;
     position:relative;
-    padding: 5px 0 4px 24px;    
+    padding: 5px 0 4px 24px;
     cursor: pointer;
 }
 
@@ -459,16 +460,16 @@ input[type="file"]{
 .undivify input[type='checkbox']:checked + label:after {
     content:'';
     height:10px;
-    width:10px; 
-    background-color:#09F;                                        
-    overflow:hidden;  
+    width:10px;
+    background-color:#09F;
+    overflow:hidden;
     position:absolute;
     display:block;
     top:7px;
     left:3px;
 
 line-height:20px;
-}                                                                                                                    
+}
 
 .undivify input[type='radio']:checked + label:after {
     content:'';
@@ -487,8 +488,8 @@ line-height:20px;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-}                
-        
+}
+
 .undivify input[disabled='disabled'] + label{
     opacity: 0.5;
 }
@@ -502,14 +503,14 @@ label {
     line-height: 20px;
     padding-top: 0;
     display:block;
-    color: #4F6676; 
+    color: #4F6676;
     margin: 5px 0;
-} 
+}
 .inputs-list{
   margin:0 inherit;
 }
 /*larger font-size and padding on checbox and radio buttons label*/
-.inputs-list input[type='radio'], 
+.inputs-list input[type='radio'],
 .inputs-list input[type='checkbox'] {
   float: left;
 }
@@ -517,8 +518,8 @@ label {
   margin: 1px 0px 1px 24px;
 }
 .inputs-list li {
-  padding: 5px 0; 
-  list-style: none outside none; 
+  padding: 5px 0;
+  list-style: none outside none;
 }
 
 .formelement, .actions{
@@ -750,7 +751,7 @@ button.blank:hover {
     width: 2.5em;
     bottom: 0;
     border-radius: 0 1px 1px 0;
-    height: 44px;
+    height: 40px;
 }
 .custom-dropdown-blue::before { /*plassering og bakgrund pa bla dropdown knapp*/
     top: 0;

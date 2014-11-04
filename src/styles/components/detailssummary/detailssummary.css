@@ -38,3 +38,20 @@
     font-size: 2em;
     height: 35px;
 }
+
+/*----- Custom1 details/summary inline----------------------*/
+.customds summary::-webkit-details-marker { /*skjule default marker pa webkit*/
+    display: none
+}
+
+.customds details summary .expando {
+    display: inline-block;
+    height: 11px;
+    width: 18px;
+    vertical-align: middle;
+    background-position: -1px -222px;
+}
+
+.customds details[open] summary .expando {
+    background-position: -1px -201px;
+}

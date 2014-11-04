@@ -13,6 +13,12 @@
 .mod.transparent > .inner { background:transparent; }
 .mod.transparent .hd,
 .mod.transparent .ft { border-radius: 2px; }
+.mod.listing hr{margin:0;}
+.mod.listing hr:last-child{display:none;}
+.mod.listing.shadow > .inner {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 /*
 .mod.creazyeks .inner{ background:transparent url("skin/historiskkart.png") no-repeat 0 0; }
 .mod.creazyeks .hd,.mod.creazyeks .ft{background-color: rgba(255,255,255,0.8);}
