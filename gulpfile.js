@@ -106,18 +106,15 @@ gulp.task('replace-imgpaths', ['build-so-css', 'build-legacy-css'], function() {
 
 gulp.task('npm-version', ['clean'], function() {
     var versionType = util.env.versionType;
-    /*spawn('npm', ['version', versionType], {
-        stdio: 'inherit'
-    }).on('close', done);*/
-    spawn('echo', ['hola', versionType], {
+    spawn('npm', ['version', versionType], {
         stdio: 'inherit'
     });
 });
 
 gulp.task('npm-publish', ['package'], function() {
-    /*spawn('npm', ['publish', '.'], {
+    spawn('npm', ['publish', '.'], {
         stdio: 'inherit'
-    }).on('close', done);*/
+    });
 });
 
 gulp.on('err', function(e) {
