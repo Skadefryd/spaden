@@ -28,6 +28,9 @@ When releasing you must specify how to bump the version number. Please consult t
 	# Ensure the tags are pushed too
 	$ git push --tags origin <branch name>
 
+	# if you need legacy deployments, run the following
+	$ node legacyDeploy.js false | true
+
 ## Legacy browser support
 
 	<!--[if IE 9 ]>
