@@ -1,6 +1,6 @@
 # Spaden - the FINN.no CSS framework
 
-There is a Scandnavian sfigure of speech which is [call a spade a spade](https://en.wikipedia.org/wiki/Call_a_spade_a_spade). The is the reason this project is called Spaden.
+There is a Scandinavian figure of speech which is [call a spade a spade](https://en.wikipedia.org/wiki/Call_a_spade_a_spade). The is the reason this project is called Spaden.
 
 [![travis status](https://api.travis-ci.org/finn-no/spaden.png)](https://travis-ci.org/finn-no/spaden)
 
@@ -33,23 +33,19 @@ When releasing you must specify how to bump the version number. Please consult t
 
 ## Legacy browser support
 
-	<!--[if IE 9 ]>
-	<link rel="stylesheet" type="text/css" media="screen,projection,handheld"
-	href="styles/so/ie9.css">
-	<![endif]-->
-	<!--[if IE 8 ]>
-	<link rel="stylesheet" type="text/css" media="screen,projection,handheld"
-	href="styles/so/ie8.css" />
-	<![endif]-->
-	<!--[if lte IE 8]>
-	<link rel="stylesheet" type="text/css" media="screen,projection,handheld,print"
-	href="styles/so/ie.css" />
-	<![endif]-->
+	<!--[if IE 9]>
+	<link rel="stylesheet" href="styles/ie9.css">
+ 	<![endif]-->
+	<!--[if IE 8]>
+	<link rel="stylesheet" href="styles/ie8.css">
+ 	<![endif]-->
+ 	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="styles/ie.css">
+ 	<![endif]-->
 
 ## Make print outs awesome
 
-	<link rel="stylesheet" type="text/css" media="print"
-	href="so/print.css">
+	<link rel="stylesheet" media="print" href="styles/print.css">
 
 ## Contributing?
 
