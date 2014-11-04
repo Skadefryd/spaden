@@ -1,4 +1,4 @@
-# Spaden - the FINN.no CSS framework 
+# Spaden - the FINN.no CSS framework
 
 There is a Scandnavian sfigure of speech which is [call a spade a spade](https://en.wikipedia.org/wiki/Call_a_spade_a_spade). The is the reason this project is called Spaden.
 
@@ -17,36 +17,35 @@ There is a Scandnavian sfigure of speech which is [call a spade a spade](https:/
 
 The built artifacts reside in the _/dist_ folder in the current directory.
 
-## Deployment
-
-	$ npm deploy
 
 ## Releasing
 
 When releasing you must specify how to bump the version number. Please consult the [semver standard](http://semver.org/) if you're not certain which to choose:
 
-	$ ./node_modules/.bin/gulp release --versionType [patch | minor | major]
+	$ npm version [patch | minor | major]
+	$ ./node_modules/.bin/gulp
+	$ npm publish .
 	# Ensure the tags are pushed too
 	$ git push --tags origin <branch name>
 
 ## Legacy browser support
 
 	<!--[if IE 9 ]>
-	<link rel="stylesheet" type="text/css" media="screen,projection,handheld" 
+	<link rel="stylesheet" type="text/css" media="screen,projection,handheld"
 	href="styles/so/ie9.css">
 	<![endif]-->
 	<!--[if IE 8 ]>
-	<link rel="stylesheet" type="text/css" media="screen,projection,handheld" 
+	<link rel="stylesheet" type="text/css" media="screen,projection,handheld"
 	href="styles/so/ie8.css" />
 	<![endif]-->
 	<!--[if lte IE 8]>
-	<link rel="stylesheet" type="text/css" media="screen,projection,handheld,print" 
+	<link rel="stylesheet" type="text/css" media="screen,projection,handheld,print"
 	href="styles/so/ie.css" />
 	<![endif]-->
 
 ## Make print outs awesome
 
-	<link rel="stylesheet" type="text/css" media="print" 
+	<link rel="stylesheet" type="text/css" media="print"
 	href="so/print.css">
 
 ## Contributing?

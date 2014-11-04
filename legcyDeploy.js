@@ -31,7 +31,7 @@ console.log('Creating legacy artifact in ' + __dirname + '/dist/' + fileName + '
 var config = {
 
 	'groupId': 'no.finntech',
-	'buildDir': __dirname + '/dist/' + pkg.name + '-' + pkg.version + '/',
+	'buildDir': __dirname + '/dist/',
 	'type': 'war',
 	'finalName': fileName,
 	'snapshot': isSnapshot,

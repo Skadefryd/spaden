@@ -30,7 +30,10 @@ gulp.task('clean', function() {
 });
 
 gulp.task('copy-images-to-dist', ['clean'], function() {
-    return gulp.src('./src/img/**', {
+    return gulp.src([
+            './src/img/**',
+            './src/styles/**'
+            ], {
             base: 'src/'
         })
         .pipe(gulp.dest(destinationDir));
@@ -104,33 +107,12 @@ gulp.task('replace-imgpaths', ['build-so-css', 'build-legacy-css'], function() {
 });
 
 
-gulp.task('npm-version', ['clean'], function() {
-    var versionType = util.env.versionType;
-    spawn('npm', ['version', versionType], {
-        stdio: 'inherit'
-    });
-});
-
-gulp.task('npm-publish', ['package'], function() {
-    spawn('npm', ['publish', '.'], {
-        stdio: 'inherit'
-    });
-});
-
 gulp.on('err', function(e) {
     console.log(e.err.stack);
 });
 
-gulp.task('release', [
-    'npm-version',
-    'copy-images-to-dist',
-    'replace-imgpaths',
-    'build-so-css',
-    'build-legacy-css',
-    'package',
-    'npm-publish'
-]);
 gulp.task('default', [
+    'copy-images-to-dist',
     'replace-imgpaths',
     'sass',
     'build-so-css',
