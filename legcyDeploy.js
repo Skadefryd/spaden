@@ -1,3 +1,4 @@
+var fs = require('fs');
 var maven = require('maven-deploy');
 var pkg = require('./package');
 
@@ -13,12 +14,26 @@ if (process.argv[2]) {
 	isSnapshot = (process.argv[2] === 'true') ? true : false;
 }
 var repoPostfix = (isSnapshot) ? 'snapshot' : 'release';
+
+var copyFileSync = function(srcFile, destFile, encoding) {
+  var content = fs.readFileSync(srcFile, encoding);
+  fs.writeFileSync(destFile, content, encoding);
+}
+
+var fileName = pkg.name + '-' + pkg.version;
+copyFileSync(
+    __dirname + '/dist/' + fileName + '.tar.gz',
+    __dirname + '/dist/' + fileName + '.war',
+    'utf-8'
+);
+
+console.log('Creating legacy artifact in ' + __dirname + '/dist/' + fileName + '.war');
 var config = {
 
 	'groupId': 'no.finntech',
 	'buildDir': __dirname + '/dist/' + pkg.name + '-' + pkg.version + '/',
 	'type': 'war',
-	'finalName': pkg.name + '-' + pkg.version,
+	'finalName': fileName,
 	'snapshot': isSnapshot,
 	'repositories': [
 		{
@@ -27,9 +42,11 @@ var config = {
 		}
 	]
 };
+maven.config(config);
 
 if (isSnapshot) {
 	maven.deploy('finntech-internal-' + repoPostfix, true);
 } else {
 	maven.deploy('finntech-internal-' + repoPostfix);
 }
+console.log('Done, enjoy!');
