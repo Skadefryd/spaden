@@ -1,40 +1,6 @@
+.container { margin: 0 auto; }
 .page { width: 990px; }
 .page.fullsize{ width:100%; } /* Fix for jobb, på cv vinner 990px og ting havner i overflow  */
-
-.mod.broadcast .messages:before { display: none; }
-
-.ad-gallery .img { width: 145px; }
-
-.linkedInBox a.img { width: 52px; }
-
-.btn-gallery { filter: alpha(opacity=30); }
-.btn-gallery:hover { filter: alpha(opacity=60); }
-
-.popover-content:before {
-    width: 0!important;
-    height: 0!important;
-    border-style: solid;
-    border-width: 0 10px 10px 10px;
-    background: transparent!important;
-    top: -10px!important;
-}
-
-.popover-content.bg-black:before { border-color: transparent transparent #000 transparent; }
-.popover-content.bg-dk-gray:before { border-color: transparent transparent #666 transparent; }
-.popover-content.bg-lt-gray:before { border-color: transparent transparent #eee transparent; }
-.popover-content.bg-pale-gray:before { border-color: transparent transparent #f5f5f5 transparent; }
-.popover-content.bg-white:before { border-color: transparent transparent #fff transparent; }
-.popover-content.bg-dkdk-blue:before { border-color: transparent transparent #000066 transparent; }
-.popover-content.bg-dk-blue:before { border-color: transparent transparent #0099ff transparent; }
-.popover-content.bg-blue:before { border-color: transparent transparent #a2d2ee transparent; }
-.popover-content.bg-lt-blue:before { border-color: transparent transparent #ddeeff transparent; }
-.popover-content.bg-pale-blue:before { border-color: transparent transparent #f1f8ff transparent; }
-.popover-content.bg-contrast:before { border-color: transparent transparent #444 transparent; }
-.popover-content.bg-firm:before { border-color: transparent transparent #ff6600 transparent; }
-.popover-content.bg-positive:before { border-color: transparent transparent #669933 transparent; }
-.popover-content.bg-negative:before { border-color: transparent transparent #cc0000 transparent; }
-.popover-content.bg-snotgreen:before { border-color: transparent transparent #d2e286 transparent; }
-.popover-content.bg-pissyellow:before { border-color: transparent transparent #ffff99 transparent; }
 
 .hideht768{display:none}
 .r-cols1to2 .unit { width: 50%; }
@@ -94,3 +60,10 @@
 .r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
 .r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
 .r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
+
+.inprogress { background: url("../../img/animatedstripes.gif") repeat!important; }
+.nav-level1 a { height: 55px; line-height: 55px; padding-left: 20px; padding-right: 20px; }
+.topbar-nav-svg img, .topbar-nav-svg-home img { display: none; }
+.homelink { position: relative; }
+.topbar-nav-svg-home:before { content: url("/img/finn-logo.png"); position: absolute; top: 10px; left: 0; }
+.topbar-nav-svg-home { padding-left: 116px; }
