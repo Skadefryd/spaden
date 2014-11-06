@@ -83,14 +83,25 @@ gulp.task('build-legacy-css', ['sass'], function() {
         .pipe(gulp.dest(destinationDir + '/styles/'))
 });
 
-gulp.task('package', ['replace-imgpaths'], function() {
+gulp.task('copy-bundles', ['replace-imgpaths'], function(){
+    return gulp.src([
+            destinationDir + '/styles/spaden*.css',
+            destinationDir + '/styles/legac*.css',
+            destinationDir + '/styles/ie*.css',
+            destinationDir + '/styles/print*.css'
+        ])
+        .pipe(gulp.dest(destinationDir));
+});
+
+gulp.task('package', ['copy-bundles'], function() {
     var artifactVersion = pkg.version;
     if (util.env.versionOverride) {
         artifactVersion = util.env.versionOverride;
         console.log('version overrrid', artifactVersion);
     }
     return gulp.src([
-            distDir + '/' + pkg.name + '-' + pkg.version + '/**'
+            distDir + '/' + pkg.name + '-' + pkg.version + '/**',
+            distDir + '/' + pkg.name + '-' + pkg.version + '/.css'
         ], {
             base: distDir + '/' + pkg.name + '-' + pkg.version + '/'
         })
