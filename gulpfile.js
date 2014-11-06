@@ -68,6 +68,18 @@ gulp.task('build-so-css', ['sass'], function() {
         .pipe(gulp.dest(destinationDir + '/styles/'))
 });
 
+gulp.task('build-ie-css', ['sass'], function(){
+    gulp.src(buildDir + '/ie*.*')
+        .pipe(minifyCSS({
+            keepBreaks: false,
+            processImport: true,
+            debug: false
+        }))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest(destinationDir + '/styles/'))
+})
 gulp.task('build-legacy-css', ['sass'], function() {
     gulp.src(buildDir + '/legacy/**')
         .pipe(concat('legacy.css'))
@@ -128,5 +140,6 @@ gulp.task('default', [
     'sass',
     'build-so-css',
     'build-legacy-css',
+    'build-ie-css',
     'package'
 ]);
