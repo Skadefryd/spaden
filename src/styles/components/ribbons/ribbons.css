@@ -1,4 +1,4 @@
-.ribbon2 { position: relative; -webkit-backface-visibility: hidden; z-index: 1; overflow: hidden;}
+.ribbon2 { position: relative; z-index: 1; overflow: hidden;}
 .ribbon2:hover { text-decoration: none; }
 .ribbon2 .ribbon-content {
     font-size: 13px;

@@ -1,4 +1,4 @@
-.container { margin: 0 auto; }
+.container { max-width: 1000px; margin: 0 auto; }
 .page { width: 990px; }
 .page.fullsize{ width:100%; } /* Fix for jobb, på cv vinner 990px og ting havner i overflow  */
 
