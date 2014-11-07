@@ -52,8 +52,9 @@ h1,h2,h3,h4{font-weight:300;}/*firefox translates normal to 400 other browsers 3
 
 @media screen and (max-width:767px){
 	body,select,input,button,textarea{
-		font:12px/1.3em;
-		font-weight: 300}
+		font-size:13px;
+		line-height:1.3;
+	}
 	  /* ====== Headings ====== */
 	/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
 	h1,.h1,.t1{font-size:25px;font-style:normal;line-height: 1.25em;}

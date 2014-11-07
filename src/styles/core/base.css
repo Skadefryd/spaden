@@ -131,6 +131,9 @@
     top: -10px;
     width: 1px;
 }
+.width-auto{
+    width:auto;
+}
 .no-border {
     border: 0!important;
 }
